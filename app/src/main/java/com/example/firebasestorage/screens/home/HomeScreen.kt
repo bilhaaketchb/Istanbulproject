@@ -6,7 +6,9 @@ import android.provider.Settings
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +16,8 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
@@ -55,6 +59,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.firebasestorage.R
+import com.example.firebasestorage.navigation.ROUT_DESTINATION
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -110,34 +115,155 @@ fun HomeScreen(navController:NavHostController) {
         Text(text = "Worldwide Destinations",
             modifier = Modifier.padding(20.dp),
             fontSize = 30.sp,
-            fontWeight = FontWeight.Bold, color = Color.Blue
+            fontWeight = FontWeight.Bold, color = Color.Black
         )
 
-        Spacer(modifier = Modifier.height(50.dp))
+        Spacer(modifier = Modifier.height(10.dp))
 
-        //Lottie Animation
-        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.world))
-        val progress by animateLottieCompositionAsState(composition )
-        LottieAnimation(composition, progress,
-            modifier = Modifier.size(100.dp)
 
-        )
+       Row(modifier = Modifier
+           .horizontalScroll(rememberScrollState())
+           .padding(start = 5.dp)) {
 
-        Spacer(modifier = Modifier.height(20.dp))
+//Box 1
+           Card() {
+               androidx.compose.foundation.layout.Box(
+                   modifier = Modifier
+                       .height(150.dp)
+                       .width(200.dp),
+                   contentAlignment = Alignment.Center
+               ) {
 
-        OutlinedButton(onClick = {
-            val settingsIntent=Intent(Settings.ACTION_SEARCH_SETTINGS)
-            mContext.startActivity(settingsIntent)
-        },
-            modifier = Modifier
-                .size(width = 300.dp, height = 70.dp)
-                .padding(start = 20.dp, end = 20.dp, top = 20.dp),
-            shape = CutCornerShape(5.dp),
-            border = BorderStroke(3.dp, Color.Blue)
-        ){
-            Text(text = "Show all", color = Color.Blue, fontSize = 20.sp)
+                   Image(
+                       painter = painterResource(id = R.drawable.img_10),
+                       contentDescription = "",
+                       contentScale = ContentScale.Crop,
+                       modifier = Modifier
+                           .fillMaxHeight()
+                           .fillMaxWidth()
+                           .size(400.dp)
+                   )
+                   Text(
+                       text = "Paris",
+                       textAlign = TextAlign.Center,
+                       fontSize = 30.sp,
+                       fontWeight = FontWeight.Bold,
+                       color = Color.White
+                   )
+               }
+
+           }
+           Spacer(modifier = Modifier.width(5.dp))
+
+
+//Box 1
+           Card() {
+               androidx.compose.foundation.layout.Box(
+                   modifier = Modifier
+                       .height(150.dp)
+                       .width(200.dp),
+                   contentAlignment = Alignment.Center
+               ) {
+
+                   Image(
+                       painter = painterResource(id = R.drawable.img_11),
+                       contentDescription = "",
+                       contentScale = ContentScale.Crop,
+                       modifier = Modifier
+                           .fillMaxHeight()
+                           .fillMaxWidth()
+                           .size(400.dp)
+                   )
+                   Text(
+                       text = "New York City",
+                       textAlign = TextAlign.Center,
+                       fontSize = 30.sp,
+                       fontWeight = FontWeight.Bold,
+                       color = Color.White
+                   )
+               }
+
+           }
+
+           Spacer(modifier = Modifier.width(5.dp))
+
+
+//Box 1
+           Card() {
+               androidx.compose.foundation.layout.Box(
+                   modifier = Modifier
+                       .height(150.dp)
+                       .width(200.dp),
+                   contentAlignment = Alignment.Center
+               ) {
+
+                   Image(
+                       painter = painterResource(id = R.drawable.img_12),
+                       contentDescription = "",
+                       contentScale = ContentScale.Crop,
+                       modifier = Modifier
+                           .fillMaxHeight()
+                           .fillMaxWidth()
+                           .size(400.dp)
+                   )
+                   Text(
+                       text = "London",
+                       textAlign = TextAlign.Center,
+                       fontSize = 30.sp,
+                       fontWeight = FontWeight.Bold,
+                       color = Color.White
+                   )
+               }
+           }
+
+
+           Spacer(modifier = Modifier.width(10.dp))
+
+
+//Box 1
+           Card() {
+               androidx.compose.foundation.layout.Box(
+                   modifier = Modifier
+                       .height(150.dp)
+                       .width(200.dp),
+                   contentAlignment = Alignment.Center
+               ) {
+
+                   Image(
+                       painter = painterResource(id = R.drawable.img_13),
+                       contentDescription = "",
+                       contentScale = ContentScale.Crop,
+                       modifier = Modifier
+                           .fillMaxHeight()
+                           .fillMaxWidth()
+                           .size(400.dp)
+                   )
+                   Text(
+                       text = "Manchester",
+                       textAlign = TextAlign.Center,
+                       fontSize = 30.sp,
+                       fontWeight = FontWeight.Bold,
+                       color = Color.White
+                   )
+               }
+
+           }
        }
 
+
+           Spacer(modifier = Modifier.height(20.dp))
+           OutlinedButton(
+               onClick = {
+                         navController.navigate(ROUT_DESTINATION)
+               },
+               modifier = Modifier
+                   .size(width = 300.dp, height = 70.dp)
+                   .padding(start = 80.dp),
+               shape = CutCornerShape(5.dp),
+               border = BorderStroke(3.dp, Color.Blue)
+           ) {
+               Text(text = "Show all", color = Color.Blue, fontSize = 20.sp)
+           }
 
 
 

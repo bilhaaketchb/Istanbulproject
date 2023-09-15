@@ -2,6 +2,7 @@ package com.example.firebasestorage.screens.login
 
 import android.content.Intent
 import android.provider.Settings
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -39,9 +40,12 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontFamily
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -63,98 +67,101 @@ fun LoginScreen(navController: NavHostController) {
     var context = LocalContext.current
 
 
-    Column(modifier = Modifier
-        .fillMaxSize()
-        .paint(painterResource(id = R.drawable.img_1), contentScale = ContentScale.FillBounds),
-            horizontalAlignment = Alignment.CenterHorizontally) {
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .paint(painterResource(id = R.drawable.img_6), contentScale = ContentScale.FillBounds),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
 
-
-//        //TopAppBar
-//        TopAppBar(title = { Text(text = "Sign in")},
-//            navigationIcon = {
-//                IconButton(onClick = {
-//                    navController.navigate(ROUT_SIGNUP)
-//                }) {
-//                    Icon(imageVector = Icons.Filled.ArrowBack , contentDescription = "arrowback")
-//                }
-//            },
-//            actions = {
-//                IconButton(onClick = {
-//                    val shareIntent= Intent(Intent.ACTION_SEND)
-//                    shareIntent.type="text/plain"
-//                    shareIntent.putExtra(Intent.EXTRA_TEXT, "Check out this is a cool content")
-//                    context.startActivity(Intent.createChooser(shareIntent, "Share"))
-//
-//
-//                }) {
-//                    Icon(imageVector = Icons.Filled.Share , contentDescription = "share")
-//                }
-//                IconButton(onClick = {
-//                    val settingsIntent=Intent(Settings.ACTION_SETTINGS)
-//                    context.startActivity(settingsIntent)
-//                }) {
-//                    Icon(imageVector = Icons.Filled.Settings , contentDescription = "settings")
-//                }
-//            },
-//            backgroundColor = Color.Green)
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        //Lottie Animation
-        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.register))
-        val progress by animateLottieCompositionAsState(composition )
+        Text(
+            text = "Register",
+            fontSize = 20.sp,
+            color = Color.Black,
+            fontFamily = FontFamily.SansSerif,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(start = 280.dp)
+                .clickable {
+                    navController.navigate(ROUT_SIGNUP)
+                }
+        )
 
-        LottieAnimation(composition, progress,
-            modifier = Modifier.size(300.dp))
+
+        Image(
+            painter = painterResource(id = R.drawable.img_8),
+            contentDescription = " ",
+            modifier = Modifier.size(width = 500.dp, height = 400.dp)
+        )
+
+        Text(
+            text = "Log in to your account",
+            fontSize = 30.sp,
+            color = Color.Blue,
+            fontFamily = FontFamily.SansSerif,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Right
+        )
+
 
         //Textfields
         Column(modifier = Modifier.padding(20.dp)) {
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            OutlinedTextField(value = email ,
-                onValueChange = {email=it},
+            OutlinedTextField(
+                value = email,
+                onValueChange = { email = it },
                 shape = RoundedCornerShape(5.dp),
                 modifier = Modifier
                     .fillMaxWidth(),
-                label = { Text(text = "Email Address")},
-                placeholder = { Text(text = "Enter email")},
+                label = { Text(text = "Email Address") },
+                placeholder = { Text(text = "Enter email") },
                 leadingIcon = { Icon(imageVector = Icons.Default.Email, contentDescription = "") },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Email)
             )
 
             Spacer(modifier = Modifier.height(20.dp))
 
-            OutlinedTextField(value = password ,
-                onValueChange = {password=it},
+            OutlinedTextField(
+                value = password,
+                onValueChange = { password = it },
                 modifier = Modifier
                     .fillMaxWidth(),
-                label = { Text(text = "Password")},
-                placeholder = { Text(text = "Type your password")},
+                label = { Text(text = "Password") },
+                placeholder = { Text(text = "Type your password") },
                 leadingIcon = { Icon(imageVector = Icons.Default.Lock, contentDescription = "") },
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
                 visualTransformation = PasswordVisualTransformation()
 
             )
+            Spacer(modifier = Modifier.height(20.dp))
+
+            Text(
+                text = "Do not have an account? Register",
+                fontSize = 15.sp,
+                modifier = Modifier.padding(start = 50.dp)
+            )
 
         }
 
-        Button(onClick = {
+
+
+    Button(
+        onClick = {
             // HANDLE LOGIN LOGIC //
             var xyz = AuthViewModel(navController, context)
-            xyz.login(email.text,password.text)
+            xyz.login(email.text, password.text)
         },
-            colors = ButtonDefaults.buttonColors(Color.Cyan),
-            modifier = Modifier.width(300.dp),
-            shape = CutCornerShape(10.dp)) {
-            Text(text = "Login")
-        }
+        colors = ButtonDefaults.buttonColors(Color.Blue),
+        modifier = Modifier.width(300.dp),
+        shape = CutCornerShape(5.dp)
+    ) {
+        Text(text = "Sign In", color = Color.White)
+    }
 
-            Text(text = "No account? Signup",
-                modifier = Modifier.clickable {
-                    navController.navigate(ROUT_SIGNUP)
-                },
-                fontSize = 15.sp)
 
     }
 

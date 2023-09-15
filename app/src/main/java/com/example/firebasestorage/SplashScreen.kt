@@ -79,7 +79,7 @@ fun SplashScreen() {
         Spacer(modifier = Modifier.height(10.dp))
 
         //Lottie Animation
-        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.books))
+        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.travel))
         val progress by animateLottieCompositionAsState(composition)
         LottieAnimation(composition, progress,
             modifier = Modifier.size(300.dp)
@@ -91,7 +91,7 @@ fun SplashScreen() {
             fontSize = 50.sp,
             fontFamily = FontFamily.Cursive,
             fontWeight = FontWeight.Bold,
-            color = Color.Cyan
+            color = Color.Blue
         )
 
         Spacer(modifier = Modifier.height(20.dp))
@@ -99,7 +99,7 @@ fun SplashScreen() {
 
         //CircularProgressIndicator
         CircularProgressIndicator(
-            modifier = Modifier.size(50.dp),
+            modifier = Modifier.size(30.dp),
             color = Color.Black,
             strokeWidth = 10.dp
         )
