@@ -86,7 +86,7 @@ fun SplashScreen() {
         )
 
         Text(
-            text = "Welcome To Your Istanbul Tour Guide App",
+            text = "Welcome To Your City View Tour Guide App",
             textAlign = TextAlign.Center,
             fontSize = 50.sp,
             fontFamily = FontFamily.Cursive,
