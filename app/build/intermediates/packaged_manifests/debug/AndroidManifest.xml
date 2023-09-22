@@ -24,7 +24,7 @@
         android:debuggable="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Istanbul"
+        android:label="CityView"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firebasestorage" >
         <activity
@@ -47,7 +47,7 @@
         <activity
             android:name="com.example.firebasestorage.Splashscreen"
             android:exported="true"
-            android:label="Institution"
+            android:label="CityView"
             android:theme="@style/Theme.Firebasestorage" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

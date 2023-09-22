@@ -7,5 +7,9 @@ const val ROUT_ABOUT = "about"
 const val ROUT_UPLOAD= "upload"
 const val ROUT_CONTACT= "contact"
 const val ROUT_DESTINATION= "destinations"
+const val ROUT_CITIES= "cities"
+const val ROUT_EXPLORECITIES= "explorecities"
+const val ROUT_HOTEL= "hotel"
+
 
 

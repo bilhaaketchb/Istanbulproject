@@ -12,8 +12,16 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-anydpi-v33/ic_launcher.xml"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_33.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_33.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/xml_backup_rules.xml.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_29.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_29.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_2.png.flat",
@@ -24,8 +32,16 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/building.json"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_25.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_25.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_36.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_36.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_18.png.flat",
@@ -34,6 +50,10 @@
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_10.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_10.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_40.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_40.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_world.json.flat",
@@ -56,6 +76,18 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_32.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_32.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_26.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_26.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_28.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_28.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_1.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_1.png"
     },
@@ -76,6 +108,10 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_41.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_41.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_5.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_5.png"
     },
@@ -92,16 +128,24 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_travel.json.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/travel.json"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_travel.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/travel.json"
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_35.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_35.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_22.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_22.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_27.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_27.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
@@ -114,6 +158,14 @@
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_7.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_7.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_38.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_38.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_31.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_31.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_12.png.flat",
@@ -140,8 +192,16 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_23.png"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_34.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_34.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_15.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_15.png"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_39.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_39.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img.png.flat",
@@ -168,12 +228,20 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable-v24/ic_launcher_foreground.xml"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_30.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_30.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_11.png.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_11.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_work.json.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/work.json"
+    },
+    {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_24.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_24.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_17.png.flat",
@@ -184,8 +252,16 @@
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_3.png"
     },
     {
+        "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_37.png.flat",
+        "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_37.png"
+    },
+    {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_42.png.flat",
+        "source": "com.example.firebasestorage.app-main-62:/drawable/img_42.png"
     },
     {
         "merged": "/home/emobilis/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.webp.flat",

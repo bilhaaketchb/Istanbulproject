@@ -4,42 +4,6 @@
             "outputFile": "com.example.firebasestorage.app-mergeDebugResources-58:/values/values.xml",
             "map": [
                 {
-                    "source": "/home/emobilis/Desktop/Istanbulproject/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "1,6,5,3,2,4,7",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "16,336,271,132,69,201,403",
-                        "endColumns": "52,66,64,68,62,69,79",
-                        "endOffsets": "64,398,331,196,127,266,478"
-                    },
-                    "to": {
-                        "startLines": "332,391,392,393,394,395,396",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "21550,26695,26762,26827,26896,26959,27029",
-                        "endColumns": "52,66,64,68,62,69,79",
-                        "endOffsets": "21598,26757,26822,26891,26954,27024,27104"
-                    }
-                },
-                {
-                    "source": "/home/emobilis/Desktop/Istanbulproject/app/src/main/res/values/themes.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "56",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "224"
-                    },
-                    "to": {
-                        "startLines": "1812",
-                        "startColumns": "4",
-                        "startOffsets": "121163",
-                        "endLines": "1814",
-                        "endColumns": "12",
-                        "endOffsets": "121331"
-                    }
-                },
-                {
                     "source": "/home/emobilis/.gradle/caches/transforms-3/7f97ebf3fb9adf481f402ec42239b791/transformed/lifecycle-viewmodel-2.6.1/res/values/values.xml",
                     "from": {
                         "startLines": "2",
@@ -54,6 +18,23 @@
                         "startOffsets": "19053",
                         "endColumns": "49",
                         "endOffsets": "19098"
+                    }
+                },
+                {
+                    "source": "/home/emobilis/Desktop/cityView/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "1,6,5,3,2,4,7",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "16,336,271,132,69,201,403",
+                        "endColumns": "52,66,64,68,62,69,79",
+                        "endOffsets": "64,398,331,196,127,266,478"
+                    },
+                    "to": {
+                        "startLines": "332,391,392,393,394,395,396",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "21550,26695,26762,26827,26896,26959,27029",
+                        "endColumns": "52,66,64,68,62,69,79",
+                        "endOffsets": "21598,26757,26822,26891,26954,27024,27104"
                     }
                 },
                 {
@@ -180,6 +161,25 @@
                     }
                 },
                 {
+                    "source": "/home/emobilis/Desktop/cityView/app/src/main/res/values/themes.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "224"
+                    },
+                    "to": {
+                        "startLines": "1812",
+                        "startColumns": "4",
+                        "startOffsets": "121163",
+                        "endLines": "1814",
+                        "endColumns": "12",
+                        "endOffsets": "121331"
+                    }
+                },
+                {
                     "source": "/home/emobilis/.gradle/caches/transforms-3/615a4bb75b7c00afa7dcfed8663f41b0/transformed/fragment-1.3.6/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,10",
@@ -199,7 +199,7 @@
                     }
                 },
                 {
-                    "source": "/home/emobilis/Desktop/Istanbulproject/app/build/generated/res/google-services/debug/values/values.xml",
+                    "source": "/home/emobilis/Desktop/cityView/app/build/generated/res/google-services/debug/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
@@ -232,23 +232,6 @@
                         "endLines": "38,39,40,41,42,43,44,45,343,344,345,346,347,348,349,350,352,353,354,355,356,357,358,359,360,2783,3084",
                         "endColumns": "89,79,89,89,79,80,79,79,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78,20,20",
                         "endOffsets": "2708,2788,2878,2968,3048,3129,3209,3289,22381,22562,22687,22794,22974,23097,23213,23316,23671,23776,23957,24082,24257,24405,24468,24530,24609,158957,169333"
-                    }
-                },
-                {
-                    "source": "/home/emobilis/Desktop/Istanbulproject/app/src/main/res/values/colors.xml",
-                    "from": {
-                        "startLines": "7,2,3,4,5,6,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "286,55,102,149,196,241,328",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "323,97,144,191,236,281,365"
-                    },
-                    "to": {
-                        "startLines": "23,78,79,80,91,92,95",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "1560,5367,5414,5461,6205,6250,6416",
-                        "endColumns": "41,46,46,46,44,44,41",
-                        "endOffsets": "1597,5409,5456,5503,6245,6290,6453"
                     }
                 },
                 {
@@ -323,6 +306,23 @@
                         "endLines": "2988,2994,3000,3003,3014",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "166202,166446,166693,166826,167238"
+                    }
+                },
+                {
+                    "source": "/home/emobilis/Desktop/cityView/app/src/main/res/values/colors.xml",
+                    "from": {
+                        "startLines": "7,2,3,4,5,6,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "286,55,102,149,196,241,328",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "323,97,144,191,236,281,365"
+                    },
+                    "to": {
+                        "startLines": "23,78,79,80,91,92,95",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "1560,5367,5414,5461,6205,6250,6416",
+                        "endColumns": "41,46,46,46,44,44,41",
+                        "endOffsets": "1597,5409,5456,5503,6245,6290,6453"
                     }
                 },
                 {

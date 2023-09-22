@@ -6,16 +6,16 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml
+8-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml
 9        android:targetSdkVersion="34" />
-9-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml
+9-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-11-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:5:5-79
-11-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:5:22-76
+11-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:5:5-79
+11-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:6:5-67
-12-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:6:22-64
+12-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:6:5-67
+12-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:6:22-64
 13
 14    <permission
 14-->[androidx.core:core:1.10.1] /home/emobilis/.gradle/caches/transforms-3/639ffbeca09861b5b0f4ac936297164e/transformed/core-1.10.1/AndroidManifest.xml:22:5-24:47
@@ -29,97 +29,97 @@
 18-->[androidx.core:core:1.10.1] /home/emobilis/.gradle/caches/transforms-3/639ffbeca09861b5b0f4ac936297164e/transformed/core-1.10.1/AndroidManifest.xml:26:22-94
 19
 20    <application
-20-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:8:5-57:19
+20-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:8:5-57:19
 21        android:allowBackup="true"
-21-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:9:9-35
+21-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:9:9-35
 22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 22-->[androidx.core:core:1.10.1] /home/emobilis/.gradle/caches/transforms-3/639ffbeca09861b5b0f4ac936297164e/transformed/core-1.10.1/AndroidManifest.xml:28:18-86
 23        android:dataExtractionRules="@xml/data_extraction_rules"
-23-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:10:9-65
+23-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:10:9-65
 24        android:debuggable="true"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:11:9-54
+25-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:11:9-54
 26        android:icon="@mipmap/ic_launcher"
-26-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:12:9-43
-27        android:label="Istanbul"
-27-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:13:9-33
+26-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:12:9-43
+27        android:label="CityView"
+27-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:13:9-33
 28        android:supportsRtl="true"
-28-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:14:9-35
+28-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:14:9-35
 29        android:theme="@style/Theme.Firebasestorage" >
-29-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:15:9-53
+29-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:15:9-53
 30        <activity
-30-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:17:9-21:60
+30-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:17:9-21:60
 31            android:name="com.example.firebasestorage.UpdateDetailsActivity"
-31-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:18:13-50
+31-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:18:13-50
 32            android:exported="false"
-32-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:19:13-37
+32-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:19:13-37
 33            android:label="@string/title_activity_update_details"
-33-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:20:13-66
+33-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:20:13-66
 34            android:theme="@style/Theme.Firebasestorage" />
-34-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:21:13-57
+34-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:21:13-57
 35        <activity
-35-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:22:9-28:20
+35-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:22:9-28:20
 36            android:name="com.example.firebasestorage.DetailsActivity"
-36-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:23:13-44
+36-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:23:13-44
 37            android:exported="true"
-37-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:24:13-36
+37-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:24:13-36
 38            android:label="@string/title_activity_details"
-38-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:25:13-59
+38-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:25:13-59
 39            android:theme="@style/Theme.Firebasestorage" >
-39-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:26:13-57
+39-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:26:13-57
 40        </activity>
 41        <activity
-41-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:29:9-35:20
+41-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:29:9-35:20
 42            android:name="com.example.firebasestorage.InsertActivity"
-42-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:30:13-43
+42-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:30:13-43
 43            android:exported="true"
-43-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:31:13-36
+43-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:31:13-36
 44            android:label="@string/title_activity_insert"
-44-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:32:13-58
+44-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:32:13-58
 45            android:theme="@style/Theme.Firebasestorage" >
-45-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:33:13-57
+45-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:33:13-57
 46        </activity>
 47        <activity
-47-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:36:9-46:20
+47-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:36:9-46:20
 48            android:name="com.example.firebasestorage.Splashscreen"
-48-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:37:13-41
+48-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:37:13-41
 49            android:exported="true"
-49-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:38:13-36
-50            android:label="Institution"
-50-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:39:13-40
+49-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:38:13-36
+50            android:label="CityView"
+50-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:39:13-37
 51            android:theme="@style/Theme.Firebasestorage" >
-51-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:40:13-57
+51-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:40:13-57
 52            <intent-filter>
-52-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:41:13-45:29
+52-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:41:13-45:29
 53                <action android:name="android.intent.action.MAIN" />
-53-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:42:17-69
-53-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:42:25-66
+53-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:42:17-69
+53-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:42:25-66
 54
 55                <category android:name="android.intent.category.LAUNCHER" />
-55-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:44:17-77
-55-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:44:27-74
+55-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:44:17-77
+55-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:44:27-74
 56            </intent-filter>
 57        </activity>
 58        <activity
-58-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:47:9-51:60
+58-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:47:9-51:60
 59            android:name="com.example.firebasestorage.LocationActivity"
-59-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:48:13-45
+59-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:48:13-45
 60            android:exported="false"
-60-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:49:13-37
+60-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:49:13-37
 61            android:label="@string/title_activity_location"
-61-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:50:13-60
+61-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:50:13-60
 62            android:theme="@style/Theme.Firebasestorage" />
-62-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:51:13-57
+62-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:51:13-57
 63        <activity
-63-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:52:9-56:60
+63-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:52:9-56:60
 64            android:name="com.example.firebasestorage.MainActivity"
-64-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:53:13-41
+64-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:53:13-41
 65            android:exported="true"
-65-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:54:13-36
+65-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:54:13-36
 66            android:label="@string/app_name"
-66-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:55:13-45
+66-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:55:13-45
 67            android:theme="@style/Theme.Firebasestorage" />
-67-->/home/emobilis/Desktop/Istanbulproject/app/src/main/AndroidManifest.xml:56:13-57
+67-->/home/emobilis/Desktop/cityView/app/src/main/AndroidManifest.xml:56:13-57
 68        <activity
 68-->[androidx.compose.ui:ui-tooling-android:1.5.0] /home/emobilis/.gradle/caches/transforms-3/f64be45414c729999ff4574e7ac083ba/transformed/ui-tooling-release/AndroidManifest.xml:23:9-25:39
 69            android:name="androidx.compose.ui.tooling.PreviewActivity"

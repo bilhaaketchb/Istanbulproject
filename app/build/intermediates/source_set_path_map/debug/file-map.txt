@@ -53,10 +53,10 @@ com.example.firebasestorage.app-ui-tooling-release-51 /home/emobilis/.gradle/cac
 com.example.firebasestorage.app-material-release-52 /home/emobilis/.gradle/caches/transforms-3/fa0bc5941a41d90ccf83e8432a4ce516/transformed/material-release/res
 com.example.firebasestorage.app-startup-runtime-1.1.1-53 /home/emobilis/.gradle/caches/transforms-3/faf53f82ca36ebd0ccf316248da36a3f/transformed/startup-runtime-1.1.1/res
 com.example.firebasestorage.app-ui-geometry-release-54 /home/emobilis/.gradle/caches/transforms-3/fb446599df9a0a2cc9e700efca4fd06b/transformed/ui-geometry-release/res
-com.example.firebasestorage.app-google-services-55 /home/emobilis/Desktop/Istanbulproject/app/build/generated/res/google-services/debug
-com.example.firebasestorage.app-resValues-56 /home/emobilis/Desktop/Istanbulproject/app/build/generated/res/resValues/debug
-com.example.firebasestorage.app-packageDebugResources-57 /home/emobilis/Desktop/Istanbulproject/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
-com.example.firebasestorage.app-packageDebugResources-58 /home/emobilis/Desktop/Istanbulproject/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
-com.example.firebasestorage.app-merged_res-59 /home/emobilis/Desktop/Istanbulproject/app/build/intermediates/merged_res/debug
-com.example.firebasestorage.app-debug-60 /home/emobilis/Desktop/Istanbulproject/app/src/debug/res
-com.example.firebasestorage.app-main-61 /home/emobilis/Desktop/Istanbulproject/app/src/main/res
+com.example.firebasestorage.app-google-services-55 /home/emobilis/Desktop/cityView/app/build/generated/res/google-services/debug
+com.example.firebasestorage.app-resValues-56 /home/emobilis/Desktop/cityView/app/build/generated/res/resValues/debug
+com.example.firebasestorage.app-packageDebugResources-57 /home/emobilis/Desktop/cityView/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.example.firebasestorage.app-packageDebugResources-58 /home/emobilis/Desktop/cityView/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.example.firebasestorage.app-merged_res-59 /home/emobilis/Desktop/cityView/app/build/intermediates/merged_res/debug
+com.example.firebasestorage.app-debug-60 /home/emobilis/Desktop/cityView/app/src/debug/res
+com.example.firebasestorage.app-main-61 /home/emobilis/Desktop/cityView/app/src/main/res

@@ -79,14 +79,14 @@ fun SplashScreen() {
         Spacer(modifier = Modifier.height(10.dp))
 
         //Lottie Animation
-        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.travel))
+        val composition by rememberLottieComposition(spec = LottieCompositionSpec.RawRes(R.raw.books))
         val progress by animateLottieCompositionAsState(composition)
         LottieAnimation(composition, progress,
             modifier = Modifier.size(300.dp)
         )
 
         Text(
-            text = "Welcome To Your City View Tour Guide App",
+            text = "Welcome To Your CityView Tour Guide App",
             textAlign = TextAlign.Center,
             fontSize = 50.sp,
             fontFamily = FontFamily.Cursive,
