@@ -76,7 +76,7 @@ fun googleMap(){
                     Icon(imageVector = Icons.Filled.Settings , contentDescription = "settings")
                 }
             },
-            backgroundColor = Color.Cyan)
+            backgroundColor = Color.Blue)
 
         //WebView
 

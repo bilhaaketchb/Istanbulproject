@@ -6,6 +6,7 @@ import android.provider.Settings
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -59,6 +60,7 @@ import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.firebasestorage.R
+import com.example.firebasestorage.navigation.ROUT_CITIES
 import com.example.firebasestorage.navigation.ROUT_DESTINATION
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -142,6 +144,9 @@ fun HomeScreen(navController:NavHostController) {
                            .fillMaxHeight()
                            .fillMaxWidth()
                            .size(400.dp)
+                           .clickable {
+                               navController.navigate(ROUT_CITIES)
+                           }
                    )
                    Text(
                        text = "Paris",
@@ -173,6 +178,9 @@ fun HomeScreen(navController:NavHostController) {
                            .fillMaxHeight()
                            .fillMaxWidth()
                            .size(400.dp)
+                           .clickable {
+                               navController.navigate(ROUT_CITIES)
+                           }
                    )
                    Text(
                        text = "New York City",
@@ -205,6 +213,9 @@ fun HomeScreen(navController:NavHostController) {
                            .fillMaxHeight()
                            .fillMaxWidth()
                            .size(400.dp)
+                           .clickable {
+                               navController.navigate(ROUT_CITIES)
+                           }
                    )
                    Text(
                        text = "London",
@@ -237,6 +248,9 @@ fun HomeScreen(navController:NavHostController) {
                            .fillMaxHeight()
                            .fillMaxWidth()
                            .size(400.dp)
+                           .clickable {
+                               navController.navigate(ROUT_CITIES)
+                           }
                    )
                    Text(
                        text = "Manchester",

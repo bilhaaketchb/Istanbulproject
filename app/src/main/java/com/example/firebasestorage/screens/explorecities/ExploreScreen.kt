@@ -3,6 +3,7 @@ package com.example.firebasestorage.screens.explorecities
 import android.content.Intent
 import android.graphics.Paint.Align
 import android.media.audiofx.BassBoost
+import android.util.Log
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -61,6 +62,9 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_CITIES
+import com.example.firebasestorage.navigation.ROUT_CITIES2
+import com.example.firebasestorage.navigation.ROUT_HOTEL
+import com.example.firebasestorage.navigation.ROUT_HOTEL2
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -74,45 +78,22 @@ fun ExploreScreen(navController: NavController) {
             title = {  },
             colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
             navigationIcon = {
-                IconButton(onClick = {/* Do Something*/ }) {
+                IconButton(onClick = {/* Do Something*/
+                    navController.navigate(ROUT_CITIES)
+                }) {
                     Icon(Icons.Filled.ArrowBack, null)
                 }}, actions = {
-                IconButton(onClick = {/* Do Something*/ }) {
+                IconButton(onClick = {/* Do Something*/
+                }) {
                     Icon(Icons.Filled.Search, null)
                 }
             })
         Spacer(modifier = Modifier.height(10.dp))
-        Row() {
 
-        OutlinedButton(
-            onClick = {
-                navController.navigate(ROUT_CITIES)
-            },
-            modifier = Modifier
-                .size(width = 170.dp, height = 40.dp)
-                .padding(start = 30.dp),
-            shape = CutCornerShape(5.dp),
-            border = BorderStroke(2.dp, Color.Black)) {
+        Text(text = "Things To Do", color = Color.Black,
+            fontSize = 20.sp,
+            textAlign = TextAlign.Center)
 
-            Spacer(modifier = Modifier.height(10.dp))
-
-            Text(text = "Today", color = Color.Black, fontSize = 10.sp)
-        }
-
-        OutlinedButton(
-            onClick = {
-                navController.navigate(ROUT_CITIES)
-            },
-            modifier = Modifier
-                .size(width = 170.dp, height = 40.dp)
-                .padding(start = 40.dp),
-            shape = CutCornerShape(5.dp),
-            border = BorderStroke(2.dp, Color.Black)) {
-
-            Text(text = "Tomorrow", color = Color.Black, fontSize = 10.sp)
-        }
-
-        }
         Spacer(modifier = Modifier.height(10.dp))
 
 
@@ -402,7 +383,7 @@ fun ExploreScreen(navController: NavController) {
                   Column(modifier = Modifier.padding(start = 20.dp)) {
                       Text(
                           text = "Tower of London Entrance Ticket Including Crown Jewels and Beefeater Tour",
-                          fontSize = 15.sp,
+                          fontSize = 18.sp,
                           color = Color.Black,
                           fontWeight = FontWeight.Bold
                       )
@@ -440,14 +421,14 @@ fun ExploreScreen(navController: NavController) {
                               modifier = Modifier
                                   .size(width = 80.dp, height = 30.dp),
                               shape = RoundedCornerShape(5.dp),
-                              border = BorderStroke(2.dp, Color.Blue)) {
+                              border = BorderStroke(2.dp, Color.Black)) {
                               Text(text = "Call", color = Color.Black, fontSize = 13.sp)
                           }
                           Spacer(modifier = Modifier.width(30.dp))
                           Text(
                               text = "From ksh.65,000",
                               fontSize = 15.sp,
-                              color = Color.Black,
+                              color = Color.Blue,
                               fontWeight = FontWeight.Bold,
                               textAlign = TextAlign.End
                           )
@@ -488,7 +469,7 @@ fun ExploreScreen(navController: NavController) {
                   Column(modifier = Modifier.padding(start = 20.dp)) {
                       Text(
                           text = "Harry Potter Tour of Warmer Bros Studio with Luxury Transport from London",
-                          fontSize = 15.sp,
+                          fontSize = 18.sp,
                           color = Color.Black,
                           fontWeight = FontWeight.Bold
                       )
@@ -497,11 +478,11 @@ fun ExploreScreen(navController: NavController) {
 
                       Row() {
 
-                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp))
-                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp))
-                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp))
-                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp))
-                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp))
+                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp), tint = Color.Blue )
+                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp), tint = Color.Blue)
+                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp), tint = Color.Blue)
+                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp), tint = Color.Blue)
+                          Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp), tint = Color.Black)
 
                           Spacer(modifier = Modifier.width(40.dp))
                           Text(
@@ -523,14 +504,14 @@ fun ExploreScreen(navController: NavController) {
                               modifier = Modifier
                                   .size(width = 80.dp, height = 30.dp),
                               shape = RoundedCornerShape(5.dp),
-                              border = BorderStroke(2.dp, Color.Blue)) {
+                              border = BorderStroke(2.dp, Color.Black)) {
                               Text(text = "Call", color = Color.Black, fontSize = 10.sp)
                           }
                           Spacer(modifier = Modifier.width(30.dp))
                           Text(
                               text = "From ksh.55,000",
                               fontSize = 15.sp,
-                              color = Color.Black,
+                              color = Color.Blue,
                               fontWeight = FontWeight.Bold,
                               textAlign = TextAlign.End
                           )
@@ -541,6 +522,19 @@ fun ExploreScreen(navController: NavController) {
                   }
               }
               Spacer(modifier = Modifier.height(10.dp))
+              OutlinedButton(
+                      onClick = {
+                          navController.navigate(ROUT_HOTEL2)
+                      },
+              modifier = Modifier
+                  .size(width = 300.dp, height = 70.dp)
+                  .padding(start = 80.dp),
+              shape = CutCornerShape(5.dp),
+              border = BorderStroke(3.dp, Color.Blue)
+              ) {
+              Text(text = "Next", color = Color.Blue, fontSize = 20.sp)
+          }
+
 
 
 

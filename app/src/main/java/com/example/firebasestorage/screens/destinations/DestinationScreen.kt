@@ -45,7 +45,21 @@ import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.R
+import androidx.compose.foundation.clickable
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import com.example.firebasestorage.navigation.ROUT_CITIES
+import com.example.firebasestorage.navigation.ROUT_CITIES2
+import com.example.firebasestorage.navigation.ROUT_CITIES3
+import com.example.firebasestorage.navigation.ROUT_CITIES4
+import com.example.firebasestorage.navigation.ROUT_CITIES5
+import com.example.firebasestorage.navigation.ROUT_CITIES6
+import com.example.firebasestorage.navigation.ROUT_DESTINATION
+import com.example.firebasestorage.navigation.ROUT_HOME
+import com.example.firebasestorage.navigation.ROUT_SIGNUP
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -53,9 +67,26 @@ fun DestinationScreen(navController: NavController){
     var search1 by remember { mutableStateOf("") }
 
     Column(modifier = Modifier.fillMaxSize()) {
-        Spacer(modifier = Modifier.height(10.dp))
+
+        //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
+        TopAppBar(
+            title = { },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            navigationIcon = {
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_HOME) }) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_CITIES)}) {
+                    Icon(Icons.Filled.ArrowForward, null)
+                }
+            })
+        Spacer(modifier = Modifier.height(5.dp))
+        
+
 
         Spacer(modifier = Modifier.height(10.dp))
+
 
         OutlinedTextField(value = search1,
             onValueChange = { search1= it },
@@ -64,13 +95,14 @@ fun DestinationScreen(navController: NavController){
                 .fillMaxWidth()
                 .padding(start = 10.dp, end = 10.dp),
             leadingIcon = {
-                androidx.compose.material3.Icon(
+                Icon(
                     imageVector = Icons.Default.Search,
                     contentDescription = "search"
                 )
             })
 
             Spacer(modifier = Modifier.height(10.dp))
+
         Text(text = "Destinations",
             modifier = Modifier.padding(20.dp),
             fontSize = 30.sp,
@@ -84,12 +116,14 @@ fun DestinationScreen(navController: NavController){
 
              //Card1
              Card() {
+
                  Column() {
                      Box(
                          modifier = Modifier
                              .height(150.dp)
                              .width(180.dp),
                          contentAlignment = Alignment.Center
+
                      ) {
                          Image(
                              painter = painterResource(id = R.drawable.img_14),
@@ -99,6 +133,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES)
+                                 }
                          )
 
                      }
@@ -131,6 +168,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES2)
+                                 }
                          )
 
                      }
@@ -170,6 +210,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES3)
+                                 }
                          )
 
                      }
@@ -202,6 +245,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES4)
+                                 }
                          )
 
                      }
@@ -241,6 +287,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES5)
+                                 }
                          )
 
                      }
@@ -273,6 +322,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES6)
+                                 }
                          )
 
                      }
@@ -312,6 +364,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES)
+                                 }
                          )
 
                      }
@@ -344,6 +399,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES)
+                                 }
                          )
 
                      }
@@ -383,6 +441,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES)
+                                 }
                          )
 
                      }
@@ -415,6 +476,9 @@ fun DestinationScreen(navController: NavController){
                                  .fillMaxHeight()
                                  .fillMaxWidth()
                                  .size(400.dp)
+                                 .clickable {
+                                     navController.navigate(ROUT_CITIES)
+                                 }
                          )
 
                      }
@@ -432,25 +496,9 @@ fun DestinationScreen(navController: NavController){
 
          }
          Spacer(modifier = Modifier.height(20.dp))
-         OutlinedButton(
-             onClick = {
-                 navController.navigate(ROUT_CITIES)
-             },
-             modifier = Modifier
-                 .size(width = 300.dp, height = 70.dp)
-                 .padding(start = 80.dp),
-             shape = CutCornerShape(5.dp),
-             border = BorderStroke(3.dp, Color.Blue)
-         ) {
-             Text(text = "Next", color = Color.Blue, fontSize = 20.sp)
-         }
-
-
-
 
 
      }
-
 
 
     }

@@ -17,14 +17,19 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.ArrowForward
+import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -43,13 +48,32 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.firebasestorage.LocationActivity
 import com.example.firebasestorage.R
+import com.example.firebasestorage.navigation.ROUT_CITIES
+import com.example.firebasestorage.navigation.ROUT_DESTINATION
 import com.example.firebasestorage.navigation.ROUT_EXPLORECITIES
+import com.example.firebasestorage.navigation.ROUT_HOTEL
+import com.example.firebasestorage.navigation.ROUT_MUSEUM
 
 @OptIn(ExperimentalMaterial3Api::class, UiToolingDataApi::class)
 @Composable
 fun CitiesScreen(navController: NavController) {
     var mContext = LocalContext.current
     Column(modifier = Modifier.fillMaxSize()) {
+
+        //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
+        TopAppBar(
+            title = { },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            navigationIcon = {
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_DESTINATION) }) {
+                    Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = {/* Do Something*/ }) {
+                    Icon(Icons.Filled.Search, null)
+                }
+            })
+        Spacer(modifier = Modifier.height(10.dp))
 
         Box(
             modifier = Modifier
@@ -97,7 +121,7 @@ fun CitiesScreen(navController: NavController) {
         //Button 2
         OutlinedButton(
             onClick = {
-                navController.navigate(ROUT_EXPLORECITIES)
+                navController.navigate(ROUT_HOTEL)
             },
             modifier = Modifier
                 .size(width = 350.dp, height = 50.dp)
@@ -109,46 +133,12 @@ fun CitiesScreen(navController: NavController) {
             Spacer(modifier = Modifier.width(20.dp))
             Text(text = "Hotels", color = Color.Black, fontSize = 20.sp)
         }
-        Spacer(modifier = Modifier.height(10.dp))
 
+        Spacer(modifier = Modifier.height(10.dp))
         //Button 3
         OutlinedButton(
             onClick = {
-                navController.navigate(ROUT_EXPLORECITIES)
-            },
-            modifier = Modifier
-                .size(width = 350.dp, height = 50.dp)
-                .padding(start = 20.dp),
-            border = BorderStroke(3.dp, Color.Black),
-            colors = ButtonDefaults.buttonColors(Color.White)
-        ) {
-            Image(painter = painterResource(id = R.drawable.img_27), contentDescription = "")
-            Spacer(modifier = Modifier.width(20.dp))
-            Text(text = "Plans in 1 to 7 Days", color = Color.Black, fontSize = 20.sp)
-        }
-        Spacer(modifier = Modifier.height(10.dp))
-
-        //Button 4
-        OutlinedButton(
-            onClick = {
-                navController.navigate(ROUT_EXPLORECITIES)
-            },
-            modifier = Modifier
-                .size(width = 350.dp, height = 50.dp)
-                .padding(start = 20.dp),
-            border = BorderStroke(3.dp, Color.Black),
-            colors = ButtonDefaults.buttonColors(Color.White)
-        ) {
-            Image(painter = painterResource(id = R.drawable.img_28), contentDescription = "")
-            Spacer(modifier = Modifier.width(20.dp))
-            Text(text = "Sights", color = Color.Black, fontSize = 20.sp)
-        }
-
-        Spacer(modifier = Modifier.height(10.dp))
-        //Button 5
-        OutlinedButton(
-            onClick = {
-                navController.navigate(ROUT_EXPLORECITIES)
+                navController.navigate(ROUT_MUSEUM)
             },
             modifier = Modifier
                 .size(width = 350.dp, height = 70.dp)
@@ -162,7 +152,7 @@ fun CitiesScreen(navController: NavController) {
         }
 
         Spacer(modifier = Modifier.height(10.dp))
-        //Button 6
+        //Button 4
         OutlinedButton(
             onClick = {
                mContext.startActivity(Intent(mContext,LocationActivity::class.java))
