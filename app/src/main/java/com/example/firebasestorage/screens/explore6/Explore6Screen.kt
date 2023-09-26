@@ -24,6 +24,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Search
@@ -72,6 +73,7 @@ import com.example.firebasestorage.navigation.ROUT_HOTEL2
 import com.example.firebasestorage.navigation.ROUT_HOTEL3
 import com.example.firebasestorage.navigation.ROUT_HOTEL4
 import com.example.firebasestorage.navigation.ROUT_HOTEL5
+import com.example.firebasestorage.navigation.ROUT_HOTEL6
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -83,7 +85,7 @@ fun Explore6Screen(navController: NavController) {
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = {  },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/
                     navController.navigate(ROUT_CITIES6)
@@ -91,8 +93,9 @@ fun Explore6Screen(navController: NavController) {
                     Icon(Icons.Filled.ArrowBack, null)
                 }}, actions = {
                 IconButton(onClick = {/* Do Something*/
+                    navController.navigate(ROUT_HOTEL6)
                 }) {
-                    Icon(Icons.Filled.Search, null)
+                    Icon(Icons.Filled.ArrowForward, null)
                 }
             })
         Spacer(modifier = Modifier.height(10.dp))

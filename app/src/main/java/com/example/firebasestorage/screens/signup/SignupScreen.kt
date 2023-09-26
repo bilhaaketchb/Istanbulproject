@@ -108,18 +108,6 @@ fun SignupScreen(navController: NavHostController) {
 
         )
         Spacer(modifier = Modifier.height(10.dp))
-        Image(
-            painter = painterResource(id = R.drawable.img_9),
-            contentDescription = " ",
-            modifier = Modifier.size(width = 500.dp, height = 50.dp)
-        )
-        androidx.compose.material3.Text(
-            text = "Choose a profile picture",
-            textAlign = TextAlign.Center,
-            fontSize = 20.sp,
-            fontWeight = FontWeight.Bold,
-            color = Color.Black
-        )
 
             //Textfields
         Column(modifier = Modifier.padding(20.dp)) {
@@ -181,7 +169,7 @@ fun SignupScreen(navController: NavHostController) {
             var xyz = AuthViewModel(navController, mContext)
             xyz.signup(email.text.trim(),password.text.trim())
         },
-            colors = androidx.compose.material.ButtonDefaults.buttonColors(Color.Blue),
+            colors = androidx.compose.material.ButtonDefaults.buttonColors(Color.Black),
             modifier = Modifier.width(300.dp),
             shape = CutCornerShape(5.dp)) {
             Text(text = "Register", color = Color.White)

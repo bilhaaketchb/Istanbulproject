@@ -55,7 +55,9 @@ import com.airbnb.lottie.compose.LottieAnimation
 import com.airbnb.lottie.compose.LottieCompositionSpec
 import com.airbnb.lottie.compose.animateLottieCompositionAsState
 import com.airbnb.lottie.compose.rememberLottieComposition
+import com.example.firebasestorage.InsertActivity
 import com.example.firebasestorage.R
+import com.example.firebasestorage.Splashscreen
 import com.example.firebasestorage.data.AuthViewModel
 import com.example.firebasestorage.navigation.ROUT_LOGIN
 import com.example.firebasestorage.navigation.ROUT_SIGNUP
@@ -85,7 +87,7 @@ fun LoginScreen(navController: NavHostController) {
             fontWeight = FontWeight.Bold,
             modifier = Modifier.padding(start = 280.dp)
                 .clickable {
-                    navController.navigate(ROUT_SIGNUP)
+                  navController.navigate(ROUT_SIGNUP)
                 }
         )
 
@@ -99,7 +101,7 @@ fun LoginScreen(navController: NavHostController) {
         Text(
             text = "Log in to your account",
             fontSize = 30.sp,
-            color = Color.Blue,
+            color = Color.Black,
             fontFamily = FontFamily.SansSerif,
             fontWeight = FontWeight.Bold,
             textAlign = TextAlign.Right
@@ -137,8 +139,19 @@ fun LoginScreen(navController: NavHostController) {
                 visualTransformation = PasswordVisualTransformation()
 
             )
-            Spacer(modifier = Modifier.height(20.dp))
-
+                   Spacer(modifier = Modifier.height(20.dp))
+    Button(
+        onClick = {
+            // HANDLE LOGIN LOGIC //
+            var xyz = AuthViewModel(navController, context)
+            xyz.login(email.text, password.text)
+        },
+        colors = ButtonDefaults.buttonColors(Color.Black),
+        modifier = Modifier.width(300.dp),
+        shape = CutCornerShape(5.dp)
+    ) {
+        Text(text = "Sign In", color = Color.White)
+    }
             Text(
                 text = "Do not have an account? Register",
                 fontSize = 15.sp,
@@ -148,19 +161,6 @@ fun LoginScreen(navController: NavHostController) {
         }
 
 
-
-    Button(
-        onClick = {
-            // HANDLE LOGIN LOGIC //
-            var xyz = AuthViewModel(navController, context)
-            xyz.login(email.text, password.text)
-        },
-        colors = ButtonDefaults.buttonColors(Color.Blue),
-        modifier = Modifier.width(300.dp),
-        shape = CutCornerShape(5.dp)
-    ) {
-        Text(text = "Sign In", color = Color.White)
-    }
 
 
     }

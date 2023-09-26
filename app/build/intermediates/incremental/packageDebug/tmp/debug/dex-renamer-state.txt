@@ -1,4 +1,4 @@
-#Mon Sep 25 00:24:48 EAT 2023
+#Tue Sep 26 16:34:31 EAT 2023
 base.0=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
@@ -8,8 +8,7 @@ base.13=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediate
 base.14=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeExtDexDebug/classes3.dex
 base.15=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/2/classes.dex
 base.16=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.17=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/14/classes.dex
-base.18=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
+base.17=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex
 base.2=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
 base.3=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
 base.4=/home/bilha/AndroidStudioProjects/Istanbulproject/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
@@ -27,8 +26,7 @@ path.13=classes2.dex
 path.14=classes3.dex
 path.15=2/classes.dex
 path.16=11/classes.dex
-path.17=14/classes.dex
-path.18=5/classes.dex
+path.17=5/classes.dex
 path.2=1/classes.dex
 path.3=10/classes.dex
 path.4=12/classes.dex
@@ -47,7 +45,6 @@ renamed.14=classes15.dex
 renamed.15=classes16.dex
 renamed.16=classes17.dex
 renamed.17=classes18.dex
-renamed.18=classes19.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex

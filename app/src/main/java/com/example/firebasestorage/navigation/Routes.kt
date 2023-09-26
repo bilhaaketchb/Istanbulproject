@@ -3,7 +3,6 @@ package com.example.firebasestorage.navigation
 const val ROUT_HOME = "home"
 const val ROUT_LOGIN = "login"
 const val ROUT_SIGNUP = "signup"
-const val ROUT_ABOUT = "about"
 const val ROUT_UPLOAD= "upload"
 const val ROUT_CONTACT= "contact"
 const val ROUT_DESTINATION= "destinations"
@@ -32,6 +31,8 @@ const val ROUT_CITIES6= "cities6"
 const val ROUT_EXPLORE6= "explore6"
 const val ROUT_HOTEL6= "hotel6"
 const val ROUT_MUSEUM6= "museum6"
+
+
 
 
 

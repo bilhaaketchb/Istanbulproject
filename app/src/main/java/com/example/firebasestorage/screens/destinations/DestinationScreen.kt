@@ -71,7 +71,7 @@ fun DestinationScreen(navController: NavController){
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = { },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_HOME) }) {
                     Icon(Icons.Filled.ArrowBack, null)
@@ -81,9 +81,6 @@ fun DestinationScreen(navController: NavController){
                     Icon(Icons.Filled.ArrowForward, null)
                 }
             })
-        Spacer(modifier = Modifier.height(5.dp))
-        
-
 
         Spacer(modifier = Modifier.height(10.dp))
 

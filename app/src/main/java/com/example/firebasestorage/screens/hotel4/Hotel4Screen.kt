@@ -1,5 +1,6 @@
-package com.example.firebasestorage.screens.hotel4
+package com.example.firebasestorage.screens.hotels4
 
+import android.content.Intent
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -17,8 +18,10 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
+import androidx.compose.material.icons.outlined.Favorite
 import androidx.compose.material3.Card
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -39,49 +42,64 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.core.net.toUri
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.firebasestorage.InsertActivity
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_BOOKING
 import com.example.firebasestorage.navigation.ROUT_CITIES
 import com.example.firebasestorage.navigation.ROUT_CITIES2
 import com.example.firebasestorage.navigation.ROUT_CITIES3
-import com.example.firebasestorage.navigation.ROUT_CITIES4
+import com.example.firebasestorage.navigation.ROUT_EXPLORECITIES
+import com.example.firebasestorage.navigation.ROUT_HOTEL
+import com.example.firebasestorage.navigation.ROUT_HOTEL2
+import com.example.firebasestorage.navigation.ROUT_HOTEL3
+import com.example.firebasestorage.navigation.ROUT_HOTEL4
+import com.example.firebasestorage.navigation.ROUT_HOTEL5
+import com.example.firebasestorage.navigation.ROUT_HOTEL6
 import com.example.firebasestorage.navigation.ROUT_MUSEUM
-import com.example.firebasestorage.navigation.ROUT_MUSEUM3
-import com.example.firebasestorage.navigation.ROUT_MUSEUM4
+import com.example.firebasestorage.navigation.ROUT_MUSEUM5
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun Hotel4Screen(navController: NavController) {
-    val mContext = LocalContext.current
+fun Hotel4Screen(navController: NavController){
     Column(modifier = Modifier.fillMaxSize()) {
+        val mContext = LocalContext.current
 
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
-            title = { },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            title = {  },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
-                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_CITIES4) }) {
+                IconButton(onClick = {/* Do Something*/
+                    navController.navigate(ROUT_EXPLORECITIES)
+                }) {
                     Icon(Icons.Filled.ArrowBack, null)
                 }
             }, actions = {
-                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_CITIES)}) {
-                    Icon(Icons.Filled.Search, null)
+                IconButton(onClick = {/* Do Something*/
+                    navController.navigate(ROUT_MUSEUM)
+                }) {
+                    Icon(Icons.Filled.ArrowForward, null)
                 }
             })
         Spacer(modifier = Modifier.height(10.dp))
 
+
         Text(
-            text = "Hotels Rooms",
-            modifier = Modifier.padding(20.dp),
-            fontSize = 30.sp,
-            fontWeight = FontWeight.Bold, color = Color.Black
+            text = "Hotel Rooms",
+            fontSize = 20.sp,
+            color = Color.Black,
+            fontWeight = FontWeight.Bold,
+            textAlign = TextAlign.Center
         )
+        Spacer(modifier = Modifier.height(10.dp))
 
         Column(modifier = Modifier.verticalScroll(rememberScrollState())) {
             //Row1
-            Row(modifier = Modifier.padding(10.dp)) {
+            Row (modifier = Modifier.padding(10.dp)){
+
                 Card() {
                     Box(
                         modifier = Modifier
@@ -89,11 +107,18 @@ fun Hotel4Screen(navController: NavController) {
                             .width(150.dp), contentAlignment = Alignment.Center
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.img_65),
-                            contentDescription = "",
+                            painter = painterResource(id = R.drawable.img_65), contentDescription = "",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.FillBounds
                         )
+                        Icon(
+                            imageVector = Icons.Outlined.Favorite, contentDescription = "",
+                            modifier = Modifier
+                                .align(Alignment.TopStart)
+                                .padding(10.dp),
+                            tint = Color.DarkGray
+                        )
+
                     }
 
                 }
@@ -109,76 +134,60 @@ fun Hotel4Screen(navController: NavController) {
 
                     Row() {
 
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Black)
 
                         Spacer(modifier = Modifier.width(40.dp))
-
                         Text(
-                            text = "15 reviews",
-                            fontSize = 12.sp,
+                            text = "8,000 reviewers",
+                            fontSize = 10.sp,
                             color = Color.Black,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
-                        Spacer(modifier = Modifier.height(50.dp))
                     }
 
+                    Spacer(modifier = Modifier.height(50.dp))
                     Row() {
                         OutlinedButton(
                             onClick = {
-                                navController.navigate(ROUT_BOOKING)
-                            },
+                                val callIntent= Intent(Intent.ACTION_DIAL)
+                                callIntent.data="tel:+254707343754".toUri()
+                                mContext.startActivity(callIntent)
 
+                            },
                             modifier = Modifier
-                                .size(width = 100.dp, height = 30.dp),
+                                .size(width = 80.dp, height = 30.dp),
                             shape = RoundedCornerShape(5.dp),
                             border = BorderStroke(2.dp, Color.Blue)
                         ) {
-                            Text(text = "Book Now", color = Color.Black, fontSize = 10.sp)
+                            Text(text = "Call", color = Color.Black, fontSize = 13.sp)
                         }
                         Spacer(modifier = Modifier.width(30.dp))
                         Text(
-                            text = "From ksh.45,368",
+                            text = "From Ksh.20,000",
                             fontSize = 15.sp,
                             color = Color.Blue,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
+
+
+
                     }
-                    Spacer(modifier = Modifier.height(10.dp))
                 }
             }
-            Row(modifier = Modifier.padding(10.dp)) {
+
+            Spacer(modifier = Modifier.height(10.dp))
+
+
+
+            //Row1
+            Row (modifier = Modifier.padding(10.dp)){
                 Card() {
                     Box(
                         modifier = Modifier
@@ -186,17 +195,24 @@ fun Hotel4Screen(navController: NavController) {
                             .width(150.dp), contentAlignment = Alignment.Center
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.img_66),
-                            contentDescription = "",
+                            painter = painterResource(id = R.drawable.img_66), contentDescription = "",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.FillBounds
                         )
+                        Icon(
+                            imageVector = Icons.Outlined.Favorite, contentDescription = "",
+                            modifier = Modifier
+                                .align(Alignment.TopStart)
+                                .padding(10.dp),
+                            tint = Color.DarkGray
+                        )
+
                     }
 
                 }
                 Column(modifier = Modifier.padding(start = 20.dp)) {
                     Text(
-                        text ="  Kimpton Hotel",
+                        text = "Kimpton Hotel",
                         fontSize = 18.sp,
                         color = Color.Black,
                         fontWeight = FontWeight.Bold
@@ -206,80 +222,59 @@ fun Hotel4Screen(navController: NavController) {
 
                     Row() {
 
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
+
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Black)
 
                         Spacer(modifier = Modifier.width(40.dp))
-
                         Text(
-                            text = "17 reviews",
-                            fontSize = 12.sp,
+                            text = "6,000 reviewers",
+                            fontSize = 10.sp,
                             color = Color.Black,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
-
-                        Spacer(modifier = Modifier.height(50.dp))
-
                     }
 
+                    Spacer(modifier = Modifier.height(50.dp))
                     Row() {
                         OutlinedButton(
                             onClick = {
-                                navController.navigate(ROUT_BOOKING)
+                                val callIntent= Intent(Intent.ACTION_DIAL)
+                                callIntent.data="tel:+254707343754".toUri()
+                                mContext.startActivity(callIntent)
                             },
                             modifier = Modifier
-                                .size(width = 100.dp, height = 30.dp),
+                                .size(width = 80.dp, height = 30.dp),
                             shape = RoundedCornerShape(5.dp),
                             border = BorderStroke(2.dp, Color.Blue)
                         ) {
-                            Text(text = "Book Now", color = Color.Black, fontSize = 10.sp) }
-
+                            Text(text = "Call", color = Color.Black, fontSize = 13.sp)
+                        }
                         Spacer(modifier = Modifier.width(30.dp))
-
                         Text(
-                            text = "From ksh.31,205",
+                            text = " From Ksh.22,550",
                             fontSize = 15.sp,
                             color = Color.Blue,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
+
+
                     }
-                    Spacer(modifier = Modifier.height(10.dp))
                 }
             }
+            Spacer(modifier = Modifier.height(10.dp))
 
-            Row(modifier = Modifier.padding(10.dp)) {
+
+
+            //Row1
+            Row (modifier = Modifier.padding(10.dp)){
                 Card() {
                     Box(
                         modifier = Modifier
@@ -287,17 +282,23 @@ fun Hotel4Screen(navController: NavController) {
                             .width(150.dp), contentAlignment = Alignment.Center
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.img_67),
-                            contentDescription = "",
+                            painter = painterResource(id = R.drawable.img_67), contentDescription = "",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.FillBounds
+                        )
+                        Icon(
+                            imageVector = Icons.Outlined.Favorite, contentDescription = "",
+                            modifier = Modifier
+                                .align(Alignment.TopStart)
+                                .padding(10.dp),
+                            tint = Color.DarkGray
                         )
                     }
 
                 }
                 Column(modifier = Modifier.padding(start = 20.dp)) {
                     Text(
-                        text = "Imperial Hotel ",
+                        text = "Imperial Hotel",
                         fontSize = 18.sp,
                         color = Color.Black,
                         fontWeight = FontWeight.Bold
@@ -307,94 +308,79 @@ fun Hotel4Screen(navController: NavController) {
 
                     Row() {
 
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
+
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Black)
 
                         Spacer(modifier = Modifier.width(40.dp))
-
                         Text(
-                            text = "13 reviews",
-                            fontSize = 12.sp,
+                            text ="8,000 reviewers",
+                            fontSize = 10.sp,
                             color = Color.Black,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
-
-                        Spacer(modifier = Modifier.height(50.dp))
-
                     }
 
+                    Spacer(modifier = Modifier.height(50.dp))
                     Row() {
                         OutlinedButton(
                             onClick = {
-                                navController.navigate(ROUT_BOOKING)
+                                val callIntent= Intent(Intent.ACTION_DIAL)
+                                callIntent.data="+254707343754".toUri()
+                                mContext.startActivity(callIntent)
                             },
                             modifier = Modifier
-                                .size(width = 100.dp, height = 30.dp),
+                                .size(width = 80.dp, height = 30.dp),
                             shape = RoundedCornerShape(5.dp),
                             border = BorderStroke(2.dp, Color.Blue)
                         ) {
-                            Text(text = "Book Now", color = Color.Black, fontSize = 10.sp)
+                            Text(text = "Call", color = Color.Black, fontSize = 13.sp)
                         }
-
                         Spacer(modifier = Modifier.width(30.dp))
-
                         Text(
-                            text = "From ksh.33,409",
+                            text = "From ksh.20,150",
                             fontSize = 15.sp,
                             color = Color.Blue,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
+
+
+
                     }
-
-                    Spacer(modifier = Modifier.height(10.dp))
                 }
-
             }
+            Spacer(modifier = Modifier.height(10.dp))
 
-            Row(modifier = Modifier.padding(10.dp)) {
+
+
+            //Row1
+            Row (modifier = Modifier.padding(10.dp)){
                 Card() {
                     Box(
                         modifier = Modifier
-                            .height(170.dp)
+                            .height(150.dp)
                             .width(150.dp), contentAlignment = Alignment.Center
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.img_68),
-                            contentDescription = "",
+                            painter = painterResource(id = R.drawable.img_68), contentDescription = "",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.FillBounds
                         )
+                        Icon(
+                            imageVector = Icons.Outlined.Favorite, contentDescription = "",
+                            modifier = Modifier
+                                .align(Alignment.TopStart)
+                                .padding(10.dp),
+                            tint = Color.DarkGray
+
+                        )
+
                     }
 
                 }
@@ -410,98 +396,84 @@ fun Hotel4Screen(navController: NavController) {
 
                     Row() {
 
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
+
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(13.dp),  tint = Color.Black)
 
                         Spacer(modifier = Modifier.width(40.dp))
-
                         Text(
-                            text = "19 reviews",
-                            fontSize = 12.sp,
+                            text = "1,680 reviewers",
+                            fontSize = 10.sp,
                             color = Color.Black,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
-
-                        Spacer(modifier = Modifier.height(50.dp))
-
                     }
 
+                    Spacer(modifier = Modifier.height(50.dp))
                     Row() {
                         OutlinedButton(
                             onClick = {
-                                navController.navigate(ROUT_BOOKING)
+                                val callIntent= Intent(Intent.ACTION_DIAL)
+                                callIntent.data="tel:+254707343754".toUri()
+                                mContext.startActivity(callIntent)
                             },
                             modifier = Modifier
-                                .size(width = 100.dp, height = 30.dp),
+                                .size(width = 80.dp, height = 30.dp),
                             shape = RoundedCornerShape(5.dp),
                             border = BorderStroke(2.dp, Color.Blue)
                         ) {
-                            Text(text = "Book Now", color = Color.Black, fontSize = 10.sp)
+                            Text(text = "Call", color = Color.Black, fontSize = 13.sp)
                         }
-
                         Spacer(modifier = Modifier.width(30.dp))
                         Text(
-                            text = "From ksh.44,355",
+                            text = " ksh.36,000",
                             fontSize = 15.sp,
                             color = Color.Blue,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
-                    }
 
-                    Spacer(modifier = Modifier.height(10.dp))
+
+
+                    }
                 }
             }
+            Spacer(modifier = Modifier.height(10.dp))
 
-            Row(modifier = Modifier.padding(10.dp)) {
+
+
+            //Row1
+            Row (modifier = Modifier.padding(10.dp)){
                 Card() {
                     Box(
                         modifier = Modifier
-                            .height(170.dp)
+                            .height(150.dp)
                             .width(150.dp), contentAlignment = Alignment.Center
                     ) {
                         Image(
-                            painter = painterResource(id = R.drawable.img_69),
-                            contentDescription = "",
+                            painter = painterResource(id = R.drawable.img_69), contentDescription = "",
                             modifier = Modifier.fillMaxSize(),
                             contentScale = ContentScale.FillBounds
                         )
+                        Icon(
+                            imageVector = Icons.Outlined.Favorite, contentDescription = "",
+                            modifier = Modifier
+                                .align(Alignment.TopStart)
+                                .padding(10.dp),
+                            tint = Color.DarkGray
+                        )
+
                     }
 
                 }
                 Column(modifier = Modifier.padding(start = 20.dp)) {
                     Text(
-                        text = " Palace Hotel",
+                        text = "Palace Hotel",
                         fontSize = 18.sp,
                         color = Color.Black,
                         fontWeight = FontWeight.Bold
@@ -511,109 +483,88 @@ fun Hotel4Screen(navController: NavController) {
 
                     Row() {
 
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
-                        Icon(
-                            imageVector = Icons.Filled.Star,
-                            contentDescription = "",
-                            modifier = Modifier.size(13.dp),
-                            tint = Color.Red
-                        )
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp), tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp), tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp), tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp), tint = Color.Red)
+                        Icon(imageVector = Icons.Filled.Star, contentDescription = "", modifier = Modifier.size(10.dp), tint = Color.Black)
 
                         Spacer(modifier = Modifier.width(40.dp))
-
                         Text(
-                            text = "18 reviews",
-                            fontSize = 12.sp,
+                            text = "From 2,276 reviewers",
+                            fontSize = 10.sp,
+                            color = Color.Black,
+                            fontWeight = FontWeight.Bold,
+                            textAlign = TextAlign.End
+                        )
+
+                    }
+
+                    Spacer(modifier = Modifier.height(50.dp))
+                    Row() {
+                        OutlinedButton(
+                            onClick = {
+                                navController.navigate(ROUT_MUSEUM)
+                            },
+                            modifier = Modifier
+                                .size(width = 80.dp, height = 30.dp),
+                            shape = RoundedCornerShape(5.dp),
+                            border = BorderStroke(2.dp, Color.Blue)
+                        ) {
+                            Text(text = "Call", color = Color.Black, fontSize = 10.sp)
+                        }
+                        Spacer(modifier = Modifier.width(30.dp))
+                        Text(
+                            text = "From ksh.25,000",
+                            fontSize = 15.sp,
                             color = Color.Black,
                             fontWeight = FontWeight.Bold,
                             textAlign = TextAlign.End
                         )
 
 
-                        Spacer(modifier = Modifier.height(50.dp))
 
                     }
-
-                    Row() {
-                        OutlinedButton(
-                            onClick = {
-                                navController.navigate(ROUT_BOOKING)
-                            },
-                            modifier = Modifier
-                                .size(width = 100.dp, height = 30.dp),
-                            shape = RoundedCornerShape(5.dp),
-                            border = BorderStroke(2.dp, Color.Blue)
-                        ) {
-                            Text(text = "Book Now", color = Color.Black, fontSize = 10.sp)
-                        }
-
-                        Spacer(modifier = Modifier.width(30.dp))
-                        Text(
-                            text = "From ksh.28,602",
-                            fontSize = 15.sp,
-                            color = Color.Blue,
-                            fontWeight = FontWeight.Bold,
-                            textAlign = TextAlign.End
-                        )
-                    }
-                    Spacer(modifier = Modifier.height(40.dp))
-
-                    OutlinedButton(
-                        onClick = {
-                            navController.navigate(ROUT_MUSEUM4)
-                        },
-                        modifier = Modifier
-                            .size(width = 300.dp, height = 50.dp)
-                            .padding(start = 80.dp),
-                        shape = CutCornerShape(5.dp),
-                        border = BorderStroke(3.dp, Color.Blue)
-                    ) {
-                        Text(text = "Next", color = Color.Blue, fontSize = 20.sp)
-                    }
-
-
                 }
-
             }
+
+            Spacer(modifier = Modifier.height(40.dp))
+
+            OutlinedButton(
+                onClick = {
+                    navController.navigate(ROUT_MUSEUM5)
+                },
+                modifier = Modifier
+                    .size(width = 300.dp, height = 50.dp)
+                    .padding(start = 80.dp),
+                shape = CutCornerShape(5.dp),
+                border = BorderStroke(3.dp, Color.Black)
+            ) {
+                Text(text = "Next", color = Color.Black, fontSize = 20.sp)
+            }
+
+
+
+
+
 
 
         }
 
 
+
     }
-
-
 
 }
 @Preview(showBackground = true)
 @Composable
-fun Hotel4ScreenPreview() {
+fun hotel42ScreenPreview(){
     Hotel4Screen(rememberNavController())
-
 }
+
+
+
+
 
 
 

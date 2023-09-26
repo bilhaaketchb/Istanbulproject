@@ -7,6 +7,7 @@ import android.text.TextUtils
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,6 +16,8 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.Settings
@@ -35,10 +38,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
 import com.google.firebase.firestore.CollectionReference
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -57,9 +63,11 @@ class InsertActivity : ComponentActivity() {
 @Composable
 fun firebaseUI() {
     val context= LocalContext.current
-    val courseName = remember { mutableStateOf("") }
-    val courseDuration = remember { mutableStateOf("") }
-    val courseDescription = remember { mutableStateOf("") }
+    val hotelname= remember { mutableStateOf("") }
+    val location = remember { mutableStateOf("") }
+    val managername = remember { mutableStateOf("") }
+    val managercontact = remember { mutableStateOf("") }
+    val hotelprice = remember { mutableStateOf("") }
 
     Column(modifier = Modifier
         .fillMaxHeight()
@@ -69,8 +77,8 @@ fun firebaseUI() {
 
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
-            title = { Text("Add data") },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Cyan),
+            title = { Text("Add More Hotels") },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/ }) {
                     Icon(Icons.Filled.ArrowBack, null)
@@ -88,10 +96,12 @@ fun firebaseUI() {
             verticalArrangement = Arrangement.Center
         ) {
 
+
+            Spacer(modifier = Modifier.height(10.dp))
             TextField(
-                value = courseName.value,
-                onValueChange = { courseName.value = it },
-                placeholder = { Text(text = "Enter your course name") },
+                value = hotelname.value,
+                onValueChange = { hotelname.value = it },
+                placeholder = { Text(text = "Hotel name") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -102,9 +112,9 @@ fun firebaseUI() {
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(
-                value = courseDuration.value,
-                onValueChange = { courseDuration.value = it },
-                placeholder = { Text(text = "Enter your course duration") },
+                value = location.value,
+                onValueChange = { location.value = it },
+                placeholder = { Text(text = "Location") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -115,9 +125,9 @@ fun firebaseUI() {
             Spacer(modifier = Modifier.height(10.dp))
 
             TextField(
-                value = courseDescription.value,
-                onValueChange = { courseDescription.value = it },
-                placeholder = { Text(text = "Enter your course description") },
+                value = managername.value,
+                onValueChange = { managername.value = it },
+                placeholder = { Text(text = "Manager name") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -126,25 +136,64 @@ fun firebaseUI() {
             )
 
             Spacer(modifier = Modifier.height(10.dp))
+
+            TextField(
+                value = managercontact.value,
+                onValueChange = { managercontact.value = it },
+                placeholder = { Text(text = "Enter your Contacts") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
+                textStyle = TextStyle(color = Color.Black, fontSize = 15.sp),
+                singleLine = true,
+            )
+            Spacer(modifier = Modifier.height(10.dp))
+
+            TextField(
+                value = hotelprice.value,
+                onValueChange = { hotelprice.value = it },
+                placeholder = { Text(text = "Hotel Price") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
+                textStyle = TextStyle(color = Color.Black, fontSize = 15.sp),
+                singleLine = true,
+            )
 
             Button(
                 onClick = {
-                    if (TextUtils.isEmpty(courseName.value.toString())) {
-                        Toast.makeText(context, "Please enter course name", Toast.LENGTH_SHORT)
+                    if (TextUtils.isEmpty(hotelname.value.toString())) {
+                        Toast.makeText(context, "Please enter hotel name", Toast.LENGTH_SHORT)
                             .show()
-                    } else if (TextUtils.isEmpty(courseDuration.value.toString())) {
-                        Toast.makeText(context, "Please enter course Duration", Toast.LENGTH_SHORT)
+                    } else if (TextUtils.isEmpty(location.value.toString())) {
+                        Toast.makeText(context, "Please enter location", Toast.LENGTH_SHORT)
                             .show()
-                    } else if (TextUtils.isEmpty(courseDescription.value.toString())) {
+                    } else if (TextUtils.isEmpty(managername.value.toString())) {
                         Toast.makeText(
                             context,
-                            "Please enter course descritpion",
+                            "Please enter manager name",
                             Toast.LENGTH_SHORT
                         )
                             .show()
-                    } else {
+                    } else if (TextUtils.isEmpty(managercontact.value.toString())) {
+                            Toast.makeText(
+                                context,
+                                "Please enter manager contact",
+                                Toast.LENGTH_SHORT
+                            )
+                                .show()
+                    }
+                    else if (TextUtils.isEmpty(hotelprice.value.toString())) {
+                        Toast.makeText(
+                            context,
+                            "Please enter hotel price",
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
+                    }
+                    else {
                         addDataToFirebase(
-                            courseName.value, courseDuration.value, courseDescription.value, context
+                            hotelname.value, location.value, managername.value,managercontact.value,hotelprice.value, context
                         )
                     }
                 },
@@ -152,10 +201,11 @@ fun firebaseUI() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
-                colors = ButtonDefaults.buttonColors(Color.Cyan)
+                colors = ButtonDefaults.buttonColors(Color.Blue),
+                shape = CutCornerShape(5.dp)
             ) {
 
-                Text(text = "Add Data", modifier = Modifier.padding(8.dp))
+                Text(text = "Save", modifier = Modifier.padding(10.dp))
             }
 
             Spacer(modifier = Modifier.height(10.dp))
@@ -167,25 +217,26 @@ fun firebaseUI() {
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(16.dp),
-                colors = ButtonDefaults.buttonColors(Color.Cyan)
+                colors = ButtonDefaults.buttonColors(Color.Black),
+                shape = CutCornerShape(5.dp)
             ) {
-                Text(text = "View Courses", modifier = Modifier.padding(8.dp))
+                Text(text = "See Additional hotels", modifier = Modifier.padding(10.dp))
             }
         }
     }
 }
 
-fun addDataToFirebase(courseName: String, courseDuration: String, courseDescription: String,
+fun addDataToFirebase(hotelname: String, location: String, managername: String,managercontact:String,hotelprice:String,
                       context: Context
 ) {
     val db: FirebaseFirestore = FirebaseFirestore.getInstance()
-    val dbCourses: CollectionReference = db.collection("Courses")
-    val courses = Course(courseName, courseDescription, courseDuration)
-    dbCourses.add(courses).addOnSuccessListener {
-        Toast.makeText(context, "Your Course has been added to Firebase Firestore", Toast.LENGTH_SHORT).show()
+    val dbCourses: CollectionReference = db.collection("Tourguides")
+    val tour = Tourguide(hotelname,location,managername,managercontact,hotelprice)
+    dbCourses.add(tour).addOnSuccessListener {
+        Toast.makeText(context, "Hotel Successfully added", Toast.LENGTH_SHORT).show()
 
     }.addOnFailureListener { e ->
-        Toast.makeText(context, "Fail to add course", Toast.LENGTH_SHORT).show()
+        Toast.makeText(context, "Fail to add hotel", Toast.LENGTH_SHORT).show()
     }
 
 }

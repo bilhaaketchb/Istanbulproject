@@ -22,8 +22,10 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.foundation.verticalScroll
+import androidx.compose.material.ButtonDefaults
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Search
@@ -65,6 +67,7 @@ import com.example.firebasestorage.navigation.ROUT_CITIES
 import com.example.firebasestorage.navigation.ROUT_CITIES2
 import com.example.firebasestorage.navigation.ROUT_HOTEL
 import com.example.firebasestorage.navigation.ROUT_HOTEL2
+import com.example.firebasestorage.navigation.ROUT_MUSEUM
 
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -76,7 +79,7 @@ fun ExploreScreen(navController: NavController) {
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = {  },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/
                     navController.navigate(ROUT_CITIES)
@@ -84,8 +87,9 @@ fun ExploreScreen(navController: NavController) {
                     Icon(Icons.Filled.ArrowBack, null)
                 }}, actions = {
                 IconButton(onClick = {/* Do Something*/
+                    navController.navigate(ROUT_HOTEL)
                 }) {
-                    Icon(Icons.Filled.Search, null)
+                    Icon(Icons.Filled.ArrowForward, null)
                 }
             })
         Spacer(modifier = Modifier.height(10.dp))
@@ -522,17 +526,18 @@ fun ExploreScreen(navController: NavController) {
                   }
               }
               Spacer(modifier = Modifier.height(10.dp))
+
               OutlinedButton(
                       onClick = {
-                          navController.navigate(ROUT_HOTEL2)
+                          navController.navigate(ROUT_HOTEL)
                       },
-              modifier = Modifier
-                  .size(width = 300.dp, height = 70.dp)
-                  .padding(start = 80.dp),
+                   modifier = Modifier
+                       .size(width = 250.dp, height = 50.dp)
+                       .padding(start = 80.dp),
               shape = CutCornerShape(5.dp),
-              border = BorderStroke(3.dp, Color.Blue)
+              border = BorderStroke(3.dp, Color.Black)
               ) {
-              Text(text = "Next", color = Color.Blue, fontSize = 20.sp)
+              Text(text = "Next", color = Color.Black, fontSize = 20.sp)
           }
 
 

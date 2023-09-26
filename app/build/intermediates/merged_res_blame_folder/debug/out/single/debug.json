@@ -1,418 +1,482 @@
 [
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_45.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_45.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_55.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_55.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/xml_backup_rules.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/xml/backup_rules.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_17.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_17.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher_round.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_25.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_25.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_37.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_37.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_40.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_40.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_60.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_60.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_85.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_85.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/xml/data_extraction_rules.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_47.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_47.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_30.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_30.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_7.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_7.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_10.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_10.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_22.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_22.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_63.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_63.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_67.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_67.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher_round.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_18.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_18.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher_background.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_44.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_44.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_69.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_69.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_38.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_38.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_24.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_24.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_31.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_31.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_71.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_71.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_world.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/world.json"
+        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_89.png.flat",
+        "source": "com.example.firebasestorage.app-main-62:/drawable/img_89.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_53.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_53.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_33.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_33.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_66.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_66.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_3.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_3.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_21.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_21.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_78.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_78.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_15.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_15.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_register.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/register.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_1.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_1.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_46.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_46.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_51.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_51.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_school.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/school.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_books.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/books.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_11.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_11.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_13.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_13.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_62.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_62.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_56.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_56.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_42.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_42.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_69.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_69.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_ic_launcher_background.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_43.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_43.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_38.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_38.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_16.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_16.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_53.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_53.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher_round.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_80.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_80.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_8.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_8.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_54.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_54.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_50.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_50.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_46.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_46.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_59.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_59.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_12.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_12.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_20.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_20.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_79.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_79.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_29.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_29.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_76.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_76.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_33.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_33.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_15.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_15.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_71.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_71.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_world.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/world.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_9.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_9.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_68.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_68.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_23.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_23.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_60.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_60.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_49.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_49.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_22.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_22.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_10.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_10.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_36.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_36.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_39.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_39.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_73.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_73.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_register.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/register.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_86.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_86.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_61.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_61.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_58.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_58.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_74.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_74.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable-v24_cityview.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable-v24/cityview.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_83.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_83.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_6.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_6.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_45.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_45.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_26.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_26.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_2.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_2.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_3.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_3.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_32.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_32.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_11.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_11.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_5.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_5.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_72.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_72.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_70.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_70.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_64.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_64.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_35.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_35.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_41.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_41.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_48.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_48.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_19.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_19.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_work.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/work.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_work.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/work.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_36.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_36.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_56.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_56.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_74.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_74.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_48.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_48.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_21.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_21.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher_background.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher_background.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_66.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_66.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_63.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_63.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/xml_backup_rules.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_50.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_50.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_44.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_44.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_25.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_25.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_books.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/books.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_12.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_12.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_building.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/building.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_57.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_57.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_28.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_28.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_18.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_18.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_6.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_6.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher_background.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_82.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_82.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_4.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_4.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_7.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_7.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_40.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_40.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_37.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_37.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_34.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_34.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_52.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_52.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_travel.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/travel.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_65.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_65.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_20.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_20.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_47.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_47.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_59.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_59.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/ic_launcher_background.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_14.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_14.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_81.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_81.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_32.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_32.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_27.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_27.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher_background.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_28.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_28.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_43.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_43.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_58.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_58.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_88.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_88.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_70.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_70.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_8.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_8.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_75.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_75.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_24.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_24.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_30.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_30.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_17.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_17.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_87.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_87.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_building.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/building.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_5.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_5.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/xml_data_extraction_rules.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_49.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_49.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_73.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_73.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_35.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_35.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_travel.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/travel.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher_background.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher_background.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_61.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_61.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_62.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_62.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_57.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_57.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_34.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_34.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_27.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_27.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_72.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_72.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_65.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_65.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_19.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_19.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_14.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_14.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xhdpi_ic_launcher_background.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_2.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_2.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_84.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_84.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_52.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_52.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_31.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_31.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher_background.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher_background.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_4.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_4.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_55.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_55.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable-v24_cityview.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable-v24/cityview.xml"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_42.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_42.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_1.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_1.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable_img_68.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable/img_68.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/raw_world2.json.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/raw/world2.json"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/raw_school.json.flat",
-        "source": "com.example.firebasestorage.app-main-62:/raw/school.json"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_23.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_23.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "com.example.firebasestorage.app-main-62:/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_41.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_41.png"
     },
     {
-        "merged": "com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher.png"
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-hdpi_ic_launcher_background.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_67.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_67.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_54.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_54.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_9.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_9.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_39.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_39.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_26.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_26.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_13.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_13.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_64.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_64.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_77.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_77.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_51.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_51.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_29.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_29.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/mipmap-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/mipmap-xxxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-merged_res-60:/drawable_img_16.png.flat",
+        "source": "/home/bilha/.gradle/daemon/8.0/com.example.firebasestorage.app-main-62:/drawable/img_16.png"
     }
 ]

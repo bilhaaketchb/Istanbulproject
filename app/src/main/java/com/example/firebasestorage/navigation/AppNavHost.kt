@@ -1,13 +1,13 @@
 package com.example.firebasestorage.navigation
 
+import android.provider.ContactsContract.Intents.Insert
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.firebasestorage.screens.about.AboutScreen
-import com.example.firebasestorage.screens.booking.BookingScreen
+import com.example.firebasestorage.InsertActivity
 import com.example.firebasestorage.screens.cities.CitiesScreen
 import com.example.firebasestorage.screens.cities2.Cities2Screen
 import com.example.firebasestorage.screens.cities3.Cities3Screen
@@ -24,11 +24,11 @@ import com.example.firebasestorage.screens.explore6.Explore6Screen
 import com.example.firebasestorage.screens.explorecities.ExploreScreen
 import com.example.firebasestorage.screens.home.HomeScreen
 import com.example.firebasestorage.screens.hotels.HotelScreen
-import com.example.firebasestorage.screens.hotel2.Hotel2Screen
-import com.example.firebasestorage.screens.hotel3.Hotel3Screen
-import com.example.firebasestorage.screens.hotel4.Hotel4Screen
-import com.example.firebasestorage.screens.hotel5.Hotel5Screen
-import com.example.firebasestorage.screens.hotel6.Hotel6Screen
+import com.example.firebasestorage.screens.hotels2.HotelS2creen
+import com.example.firebasestorage.screens.hotels3.HotelS3creen
+import com.example.firebasestorage.screens.hotels4.Hotel4Screen
+import com.example.firebasestorage.screens.hotels5.HotelS5creen
+import com.example.firebasestorage.screens.hotels6.HotelS6creen
 import com.example.firebasestorage.screens.login.LoginScreen
 import com.example.firebasestorage.screens.museum.MuseumScreen
 import com.example.firebasestorage.screens.museum2.Museum2Screen
@@ -58,10 +58,6 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
             ContactScreen(navController)
         }
 
-
-        composable(ROUT_ABOUT){
-            AboutScreen(navController)
-        }
         composable(ROUT_UPLOAD){
             UploadScreen(navController)
         }
@@ -74,23 +70,15 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
         composable(ROUT_EXPLORECITIES){
             ExploreScreen(navController)
         }
-        composable(ROUT_HOTEL){
-            HotelScreen(navController)
-        }
+
         composable(ROUT_MUSEUM) {
             MuseumScreen(navController)
-        }
-        composable(ROUT_BOOKING){
-            BookingScreen(navController)
         }
         composable(ROUT_CITIES2){
             Cities2Screen(navController)
         }
         composable(ROUT_EXPLORE2){
             Explore2Screen(navController)
-        }
-        composable(ROUT_HOTEL2){
-            Hotel2Screen(navController)
         }
         composable(ROUT_MUSEUM2){
             Museum2Screen(navController)
@@ -102,7 +90,7 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
             Explore3Screen(navController)
         }
         composable(ROUT_HOTEL3){
-            Hotel3Screen(navController)
+            HotelS3creen(navController )
         }
         composable(ROUT_MUSEUM3){
             Museum3Screen(navController)
@@ -123,7 +111,7 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
             Cities5Screen(navController)
         }
         composable(ROUT_HOTEL5){
-            Hotel5Screen(navController)
+            HotelS5creen(navController)
         }
         composable(ROUT_EXPLORE5){
             Explore5Screen(navController)
@@ -138,11 +126,19 @@ fun AppNavHost(modifier: Modifier = Modifier, navController:NavHostController = 
             Explore6Screen(navController)
         }
         composable(ROUT_HOTEL6){
-            Hotel6Screen(navController)
+            HotelS6creen(navController)
         }
         composable(ROUT_MUSEUM6){
             Museum6Screen(navController)
         }
+        composable(ROUT_HOTEL){
+            HotelScreen(navController)
+        }
+        composable(ROUT_HOTEL2){
+            HotelS2creen(navController)
+        }
+
+
 
 
 

@@ -214,7 +214,7 @@ fun Cities5Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -247,7 +247,7 @@ fun Cities5Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 
@@ -277,7 +277,7 @@ fun Cities5Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -310,7 +310,7 @@ fun Cities5Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 

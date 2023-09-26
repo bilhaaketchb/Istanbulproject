@@ -63,17 +63,16 @@ fun CitiesScreen(navController: NavController) {
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = { },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_DESTINATION) }) {
                     Icon(Icons.Filled.ArrowBack, null)
                 }
             }, actions = {
-                IconButton(onClick = {/* Do Something*/ }) {
-                    Icon(Icons.Filled.Search, null)
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_EXPLORECITIES)}) {
+                    Icon(Icons.Filled.ArrowForward, null)
                 }
             })
-        Spacer(modifier = Modifier.height(10.dp))
 
         Box(
             modifier = Modifier
@@ -193,7 +192,7 @@ fun CitiesScreen(navController: NavController) {
                 ) {
 
                     Image(
-                        painter = painterResource(id = R.drawable.img_33),
+                        painter = painterResource(id = R.drawable.img_75),
                         contentDescription = "",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -206,7 +205,7 @@ fun CitiesScreen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -226,7 +225,7 @@ fun CitiesScreen(navController: NavController) {
                 ) {
 
                     Image(
-                        painter = painterResource(id = R.drawable.img_34),
+                        painter = painterResource(id = R.drawable.img_76),
                         contentDescription = "",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -239,7 +238,7 @@ fun CitiesScreen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 
@@ -256,7 +255,7 @@ fun CitiesScreen(navController: NavController) {
                 ) {
 
                     Image(
-                        painter = painterResource(id = R.drawable.img_35),
+                        painter = painterResource(id = R.drawable.img_77),
                         contentDescription = "",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -269,7 +268,7 @@ fun CitiesScreen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -289,7 +288,7 @@ fun CitiesScreen(navController: NavController) {
                 ) {
 
                     Image(
-                        painter = painterResource(id = R.drawable.img_36),
+                        painter = painterResource(id = R.drawable.img_78),
                         contentDescription = "",
                         contentScale = ContentScale.Crop,
                         modifier = Modifier
@@ -302,7 +301,7 @@ fun CitiesScreen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 

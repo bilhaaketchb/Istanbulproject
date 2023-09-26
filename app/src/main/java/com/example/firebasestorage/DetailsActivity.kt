@@ -10,6 +10,7 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -42,6 +43,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.compose.rememberNavController
+import com.example.firebasestorage.navigation.ROUT_MUSEUM
 import com.google.firebase.firestore.FirebaseFirestore
 
 class DetailsActivity : ComponentActivity() {
@@ -50,15 +53,15 @@ class DetailsActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
 
-            var courseList = mutableStateListOf<Courses?>()
+            var tourList = mutableStateListOf<Tourguides?>()
             var db: FirebaseFirestore = FirebaseFirestore.getInstance()
-            db.collection("Courses").get()
+            db.collection("Tourguides").get()
                 .addOnSuccessListener { queryDocumentSnapshots ->
                     if (!queryDocumentSnapshots.isEmpty) {
                         val list = queryDocumentSnapshots.documents
                         for (d in list) {
-                            val c: Courses? = d.toObject(Courses::class.java)
-                            courseList.add(c)
+                            val c: Tourguides? = d.toObject(Tourguides::class.java)
+                            tourList.add(c)
 
                         }
                     } else {
@@ -68,14 +71,14 @@ class DetailsActivity : ComponentActivity() {
                 .addOnFailureListener {
                     Toast.makeText(this@DetailsActivity, "Fail to get the data.", Toast.LENGTH_SHORT).show()
                 }
-            firebaseUI(LocalContext.current, courseList)
+            firebaseUI(LocalContext.current, tourList)
         }
     }
 }
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 
-fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
+fun firebaseUI(context: Context, courseList: SnapshotStateList<Tourguides?>) {
     Column(modifier = Modifier
         .fillMaxHeight()
         .fillMaxWidth()
@@ -85,8 +88,8 @@ fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
     ) {
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
-            title = { Text("Course Details") },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Cyan),
+            title = { Text("Hotels") },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/ }) {
                     Icon(Icons.Filled.ArrowBack, null)
@@ -103,21 +106,17 @@ fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
         LazyColumn {
             itemsIndexed(courseList) { index, item ->
                 Card(onClick = {
-                    val i = Intent(context,DetailsActivity::class.java)
-                    i.putExtra("courseName", item?.courseName)
-                    i.putExtra("courseDuration", item?.courseDuration)
-                    i.putExtra("courseDescription", item?.courseDescription)
-                    i.putExtra("courseID", item?.courseID)
-                    context.startActivity(i)
-                    Toast.makeText(context, courseList[index]?.courseName + " selected..", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(context, courseList[index]?.hotelname + " selected..", Toast.LENGTH_SHORT).show()
                 },
-                    modifier = Modifier.padding(8.dp)
+                    modifier = Modifier.padding(8.dp),
                 ) {
-                    Column(modifier = Modifier.padding(8.dp).fillMaxWidth()
+                    Column(modifier = Modifier
+                        .padding(8.dp)
+                        .fillMaxWidth()
                     ) {
                         Spacer(modifier = Modifier.width(5.dp))
 
-                        courseList[index]?.courseName?.let {
+                        courseList[index]?.hotelname?.let {
                             Text(
                                 text = it,
                                 modifier = Modifier.padding(4.dp),
@@ -127,13 +126,14 @@ fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
                                     fontSize = 25.sp, fontWeight = FontWeight.Bold
                                 )
                             )
+
                         }
 
                         Spacer(modifier = Modifier.height(5.dp))
 
-                        courseList[index]?.courseDuration?.let {
+                        Row {
                             Text(
-                                text = it,
+                                text = "Location : ",
                                 modifier = Modifier.padding(4.dp),
                                 color = Color.Black,
                                 textAlign = TextAlign.Center,
@@ -141,19 +141,103 @@ fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
                                     fontSize = 15.sp
                                 )
                             )
+
+
+                            Spacer(modifier = Modifier.width(5.dp))
+                            courseList[index]?.location?.let {
+                                Text(
+                                    text = it,
+                                    modifier = Modifier.padding(4.dp),
+                                    color = Color.Black,
+                                    textAlign = TextAlign.Center,
+                                    style = TextStyle(
+                                        fontSize = 15.sp
+                                    )
+                                )
+                            }
                         }
                         Spacer(modifier = Modifier.width(5.dp))
 
-                        courseList[index]?.courseDescription?.let {
+
+                        Row {
                             Text(
-                                text = it,
+                                text = "Manager Name : ",
                                 modifier = Modifier.padding(4.dp),
                                 color = Color.Black,
                                 textAlign = TextAlign.Center,
-                                style = TextStyle(fontSize = 15.sp)
+                                style = TextStyle(
+                                    fontSize = 15.sp
+                                )
                             )
+
+
+                            Spacer(modifier = Modifier.width(5.dp))
+                            courseList[index]?.managername?.let {
+                                Text(
+                                    text = it,
+                                    modifier = Modifier.padding(4.dp),
+                                    color = Color.Black,
+                                    textAlign = TextAlign.Center,
+                                    style = TextStyle(fontSize = 15.sp)
+                                )
+                            }
                         }
+
+                        Spacer(modifier = Modifier.height(5.dp))
+
+                        Row {
+                            Text(
+                                text = "Manager Contact : ",
+                                modifier = Modifier.padding(4.dp),
+                                color = Color.Black,
+                                textAlign = TextAlign.Center,
+                                style = TextStyle(
+                                    fontSize = 15.sp
+                                )
+                            )
+
+
+                            Spacer(modifier = Modifier.width(5.dp))
+                            courseList[index]?.managercontact?.let {
+                                Text(
+                                    text = it,
+                                    modifier = Modifier.padding(4.dp),
+                                    color = Color.Black,
+                                    textAlign = TextAlign.Center,
+                                    style = TextStyle(fontSize = 15.sp)
+                                )
+                            }
+                        }
+
+                        Row {
+                            Text(
+                                text = "Hotel Price : ",
+                                modifier = Modifier.padding(4.dp),
+                                color = Color.Black,
+                                textAlign = TextAlign.Center,
+                                style = TextStyle(
+                                    fontSize = 15.sp
+                                )
+                            )
+
+
+                            Spacer(modifier = Modifier.width(5.dp))
+                            courseList[index]?.hotelprice?.let {
+                                Text(
+                                    text = it,
+                                    modifier = Modifier.padding(4.dp),
+                                    color = Color.Black,
+                                    textAlign = TextAlign.Center,
+                                    style = TextStyle(fontSize = 15.sp)
+                                )
+                            }
+                        }
+
+                        Spacer(modifier = Modifier.height(5.dp))
+
+
                     }
+
                 }
             }
 
@@ -162,7 +246,7 @@ fun firebaseUI(context: Context, courseList: SnapshotStateList<Courses?>) {
 }
 @Preview(showBackground = true)
 @Composable
-fun CourseDetailsPreview() {
+fun FirebaseUIPreview() {
 
-
+    firebaseUI()
 }

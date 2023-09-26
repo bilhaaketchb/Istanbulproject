@@ -40,10 +40,10 @@ class UpdateDetailsActivity : ComponentActivity() {
         setContent {
             firebaseUI(
                 LocalContext.current,
-                intent.getStringExtra("courseName"),
-                intent.getStringExtra("courseDuration"),
-                intent.getStringExtra("courseDescription"),
-                intent.getStringExtra("courseID")
+                intent.getStringExtra("Name of the tour guide"),
+                intent.getStringExtra("Email Adress"),
+                intent.getStringExtra("Location"),
+                intent.getStringExtra("Contacts")
             )
         }
     }
@@ -88,7 +88,7 @@ fun firebaseUI(context: Context,name: String?, duration: String?, description: S
             TextField(
                 value = courseName.value.toString(),
                 onValueChange = { courseName.value = it },
-                placeholder = { Text(text = "Enter your course name") },
+                placeholder = { Text(text = "Enter your  name") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -101,7 +101,7 @@ fun firebaseUI(context: Context,name: String?, duration: String?, description: S
             TextField(
                 value = courseDuration.value.toString(),
                 onValueChange = { courseDuration.value = it },
-                placeholder = { Text(text = "Enter your course duration") },
+                placeholder = { Text(text = "Enter your Email Adress") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -114,7 +114,7 @@ fun firebaseUI(context: Context,name: String?, duration: String?, description: S
             TextField(
                 value = courseDescription.value.toString(),
                 onValueChange = { courseDescription.value = it },
-                placeholder = { Text(text = "Enter your course description") },
+                placeholder = { Text(text = "Enter your Location") },
                 modifier = Modifier
                     .padding(16.dp)
                     .fillMaxWidth(),
@@ -124,23 +124,42 @@ fun firebaseUI(context: Context,name: String?, duration: String?, description: S
 
             Spacer(modifier = Modifier.height(10.dp))
 
+            TextField(
+                value = courseDescription.value.toString(),
+                onValueChange = { courseDescription.value = it },
+                placeholder = { Text(text = "Enter your Contacts") },
+                modifier = Modifier
+                    .padding(16.dp)
+                    .fillMaxWidth(),
+                textStyle = TextStyle(color = Color.Black, fontSize = 15.sp),
+                singleLine = true,
+            )
+
             Button(
                 onClick = {
                     if (TextUtils.isEmpty(courseName.value.toString())) {
-                        Toast.makeText(context, "Please enter course name", Toast.LENGTH_SHORT)
+                        Toast.makeText(context, "Please enter your name", Toast.LENGTH_SHORT)
                             .show()
                     } else if (TextUtils.isEmpty(courseDuration.value.toString())) {
                         Toast.makeText(
                             context,
-                            "Please enter course Duration",
+                            "Please enter your Email Adress",
                             Toast.LENGTH_SHORT
                         ).show()
                     } else if (TextUtils.isEmpty(courseDescription.value.toString())) {
                         Toast.makeText(
                             context,
-                            "Please enter course description",
+                            "Please enter your Location",
                             Toast.LENGTH_SHORT
                         ).show()
+
+                    } else if (TextUtils.isEmpty(courseDescription.value.toString())) {
+                            Toast.makeText(
+                                context,
+                                "Please enter your Contacts",
+                                Toast.LENGTH_SHORT
+                            ).show()
+
                     } else {
                         updateDataToFirebase(
                             courseID,
@@ -194,7 +213,7 @@ private fun updateDataToFirebase(
     description: String?,
     context: Context
 ) {
-    val updatedCourse = Courses(courseID, name, duration, description)
+    val updatedCourse = Tourguides(courseID, name, duration, description)
     val db = FirebaseFirestore.getInstance();
     db.collection("Courses").document(courseID.toString()).set(updatedCourse)
         .addOnSuccessListener {

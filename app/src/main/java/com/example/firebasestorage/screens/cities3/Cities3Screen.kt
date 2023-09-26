@@ -69,7 +69,7 @@ fun Cities3Screen(navController: NavController) {
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = { },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_DESTINATION) }) {
                     Icon(Icons.Filled.ArrowBack, null)
@@ -79,7 +79,6 @@ fun Cities3Screen(navController: NavController) {
                     Icon(Icons.Filled.Search, null)
                 }
             })
-        Spacer(modifier = Modifier.height(10.dp))
 
         Box(
             modifier = Modifier
@@ -212,7 +211,7 @@ fun Cities3Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -245,7 +244,7 @@ fun Cities3Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 
@@ -275,7 +274,7 @@ fun Cities3Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
 
                 }
@@ -308,7 +307,7 @@ fun Cities3Screen(navController: NavController) {
                         textAlign = TextAlign.Center,
                         fontSize = 30.sp,
                         fontWeight = FontWeight.Bold,
-                        color = Color.Magenta
+                        color = Color.White
                     )
                 }
 

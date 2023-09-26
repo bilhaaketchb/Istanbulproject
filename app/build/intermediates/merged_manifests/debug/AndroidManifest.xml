@@ -26,7 +26,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="CityView"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/Theme.Firebasestorage" >
         <activity
             android:name="com.example.firebasestorage.UpdateDetailsActivity"

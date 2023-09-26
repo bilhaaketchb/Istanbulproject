@@ -18,6 +18,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material.icons.outlined.Favorite
@@ -44,6 +45,7 @@ import androidx.compose.ui.unit.sp
 import androidx.core.net.toUri
 import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
+import com.example.firebasestorage.InsertActivity
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_BOOKING
 import com.example.firebasestorage.navigation.ROUT_CITIES
@@ -66,7 +68,7 @@ fun Museum6Screen(navController: NavController){
         //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
         TopAppBar(
             title = {  },
-            colors = TopAppBarDefaults.largeTopAppBarColors(Color.White),
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
             navigationIcon = {
                 IconButton(onClick = {/* Do Something*/
                     navController.navigate(ROUT_HOTEL6)
@@ -75,8 +77,9 @@ fun Museum6Screen(navController: NavController){
                 }
             }, actions = {
                 IconButton(onClick = {/* Do Something*/
+                    mContext.startActivity(Intent(mContext,InsertActivity::class.java))
                 }) {
-                    Icon(Icons.Filled.Search, null)
+                    Icon(Icons.Filled.ArrowForward, null)
                 }
             })
         Spacer(modifier = Modifier.height(10.dp))
@@ -522,19 +525,22 @@ fun Museum6Screen(navController: NavController){
                     }
                 }
             }
+
             Spacer(modifier = Modifier.height(40.dp))
 
-            OutlinedButton(onClick = {
-                navController.navigate(ROUT_BOOKING)
-            },
+            OutlinedButton(
+                onClick = {
+                    mContext.startActivity(Intent(mContext, InsertActivity::class.java))
+                },
                 modifier = Modifier
-                    .size(width = 300.dp, height = 70.dp)
-                    .padding(start = 100.dp),
+                    .size(width = 300.dp, height = 50.dp)
+                    .padding(start = 80.dp),
                 shape = CutCornerShape(5.dp),
                 border = BorderStroke(3.dp, Color.Blue)
             ) {
-                Text(text = "BOOK NOW", color = Color.Blue, fontSize = 20.sp)
+                Text(text = "Add More Hotels", color = Color.Black, fontSize = 20.sp)
             }
+
 
 
 

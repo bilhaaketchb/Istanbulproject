@@ -23,6 +23,8 @@ import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.material.Icon
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
+import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.filled.ArrowForward
 import androidx.compose.material.icons.filled.Search
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.Card
@@ -32,6 +34,8 @@ import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
+import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -62,6 +66,8 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.example.firebasestorage.R
 import com.example.firebasestorage.navigation.ROUT_CITIES
 import com.example.firebasestorage.navigation.ROUT_DESTINATION
+import com.example.firebasestorage.navigation.ROUT_HOME
+import com.example.firebasestorage.navigation.ROUT_SIGNUP
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -73,6 +79,20 @@ fun HomeScreen(navController:NavHostController) {
         modifier = Modifier
             .fillMaxSize()
     ) {
+        //TopAppBar -displays information and actions relating to the current screen and is placed at the top of the screen.
+        TopAppBar(
+            title = { },
+            colors = TopAppBarDefaults.largeTopAppBarColors(Color.Blue),
+            navigationIcon = {
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_SIGNUP) }) {
+                    androidx.compose.material3.Icon(Icons.Filled.ArrowBack, null)
+                }
+            }, actions = {
+                IconButton(onClick = {/* Do Something*/ navController.navigate(ROUT_DESTINATION)}) {
+                    androidx.compose.material3.Icon(Icons.Filled.ArrowForward, null)
+                }
+            })
+
 
 
         androidx.compose.foundation.layout.Box(
